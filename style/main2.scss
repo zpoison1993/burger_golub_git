@@ -1,0 +1,189 @@
+$order-color: #e45028;
+$review-color:#505050;
+$review-btn:#2f3234;
+
+@import 'layout/normalize.scss';
+@import 'layout/fonts.scss';
+@import 'layout/base2.scss';
+@import 'blocks/best.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/fixed_menu.scss';
+
+
+
+// .container--intro {
+    
+//     background-image:linear-gradient(rgba(0,0,0,0.31), rgba(0,0,0,0.31)), url(../img/texture.png) ,url(../img/video-bg.jpg) ;
+//     background-position: center;
+//     background-size: cover, cover,cover;
+//     background-repeat: no-repeat;
+//     // min-height: 650px;
+// }
+
+.intro {
+    
+    background-image:linear-gradient(rgba(0,0,0,0.31), rgba(0,0,0,0.31)), url(../img/texture.png) ,url(../img/video-bg.jpg) ;
+    background-position: center;
+    background-size: cover,cover,cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container--intro {
+    flex:1;
+}
+
+
+
+/* .background {
+    background-image: url("dust-and-scratches.jpg"), url("mountain.jpg");
+    background-blend-mode: screen;
+  } */
+
+.header {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 15%;
+    margin-top:0.5%;
+    // margin-right: 5%;
+}
+
+.header__buttons {
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    min-width: 65%;
+    min-height: inherit;
+}
+
+
+ul.menu-list {    
+    display: flex;
+    min-height: inherit;
+
+}
+
+li.menu-list__item {
+        // flex:1;
+        font-size: 13px;
+        color: white;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+       
+        margin: 0;
+        // position: relative; 
+
+        &:not(:nth-child(7)):after{
+            content: "";
+            display: block;
+            // position: absolute;
+            // top: 47%;
+            // left: 113%;
+            background: #ffffff;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            margin: 0 16px;
+          }
+
+    }
+
+
+.button {
+
+    // width: 97px;
+    // height: 36px;
+    padding: 10px 15px;
+    background-color: $order-color;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: 500;
+    // margin-top: 1.5%;
+}
+
+.order {
+    margin-left: 15px;
+}
+
+
+
+
+
+.intro__content {
+    flex:0.8;
+    display: flex;
+    align-items: center;
+}
+
+.intro__pic {
+    width: 50%;
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 41%;
+        left: 45%;
+        transform: translate(-55%, -50%);
+        width: 451px;
+        height: 241px;
+        background: url(../img/drops.png) no-repeat;
+    }
+}
+
+.intro__description {
+    width: 50%;
+}
+
+.navigation-arrow   {
+    width: 100%;
+    height: 14px;
+    // display: flex;
+    // justify-content: center;
+    
+    
+    .arrow-scroll {
+        position: absolute;;
+        top: 40%;
+        left:50%;
+        width: 29px;
+        height: 100%;
+        background-image: url(../img/arrow-scroll.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.title1 {
+    color:#f9b43b;
+    font-family: 'gagalin';
+    font-size: 72px;
+
+    &--intro {
+        margin-bottom: 20px;
+    }
+    &--best {
+        color:black;
+        text-align: center;   
+    }
+}
+
+.title2 {
+    color: #fff;
+    font-family: 'lifehack';
+    font-size: 65px;
+}
+

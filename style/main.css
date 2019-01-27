@@ -1,0 +1,92 @@
+@import url('layout/normalize.css');
+@import url('layout/fonts.css');
+@import url('layout/base.css');
+
+
+.container--main-page {
+    
+    background-image:linear-gradient(rgba(0,0,0,0.31), rgba(0,0,0,0.31)), url(../img/texture.png) ,url(../img/video-bg.jpg) ;
+    background-position: center;
+    background-size: cover, cover,cover;
+    min-height: 650px;
+}
+
+/* .background {
+    background-image: url("dust-and-scratches.jpg"), url("mountain.jpg");
+    background-blend-mode: screen;
+  } */
+
+.container--header {
+    display: flex;
+    min-height: 70px;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.menu {
+    min-width: 65%;
+}
+
+ul.menu-list {
+    
+    display: flex;
+}
+
+li.menu-list__item {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+}
+
+.sidebar{
+  
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.fixed-menu 
+{
+  position:fixed;
+}
+
+.fixed-menu__link{
+  width: 5px;
+    height: 5px;
+    display: block;
+    position: relative;
+}
+
+.fixed-menu__item{
+  margin-top: 16px;
+  border:1px solid rgb(255, 255, 255);
+  border-radius:50%;
+  padding:5px;
+}
+
+.fixed-menu__link:after
+{
+  content: "";
+  background: #ffffff;
+  color: rgb(255, 255, 255);
+  height: 5px;
+  width: 5px;
+  display: block;
+  border-radius: 50%;
+}
+
+.main-page {
+    display: flex;
+}
+
+.title1 {
+    color:#f9b43b;
+    font-family: 'gagalin';
+    font-size: 52px;
+}
+
+.title2 {
+    color: #fff;
+    font-family: 'lifehack';
+    font-size: 32px;
+}

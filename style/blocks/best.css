@@ -1,0 +1,56 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\000031}}
+.best {
+  width: 100%;
+  background-image: url(../img/bg_best.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000314}}
+.container--best {
+  padding-bottom: 119px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000319}}
+.best__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000324}}
+  .best__list-item {
+    width: 34%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000326}}
+    .best__list-item .best__list-description {
+      text-align: center;
+      font-weight: 300;
+      line-height: 1.5em;
+      color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000335}}
+.best__list-image {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000341}}
+.best__list-image--meat {
+  background: url("../img/meat.png") center center no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000341}}
+.best__list-image--hands {
+  background: url("../img/hands.png") center center no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000341}}
+.best__list-image--natural {
+  background: url("../img/natural.png") center center no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub\/style\/blocks\/best\.scss}line{font-family:\0000347}}
+.title3 {
+  width: 98%;
+  font-family: 'lifehack';
+  font-size: 24.12px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=best.css.map */
