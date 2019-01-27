@@ -1,0 +1,49 @@
+
+.title1 {
+    color:#f9b43b;
+    font-family: 'gagalin';
+    font-size: rem(72px);
+
+    &--intro {
+        margin-bottom: 35px;
+    }
+    &--best {
+        color:black;
+        text-align: center;   
+    }
+}
+
+.title2 {
+    color: #fff;
+    font-family: 'lifehack';
+    font-size: rem(65px);
+    line-height: 1em;
+    &--intro {
+        height:20%;
+        &:nth-child(1) {
+            padding-top: 4%;
+        }
+    }
+
+}
+
+
+.title3 {
+    width: 98%;
+    font-family: 'lifehack';
+    font-size: rem(24.12px);
+    text-align: center;
+    // margin-bottom: 20px;
+    &--best {
+        margin-bottom: 13px; 
+    }
+}
+
+.title4 {
+    
+    font-family: 'gagalin';
+    font-size: rem(14px);
+    color:white;
+    margin-bottom: 22px;
+    
+}

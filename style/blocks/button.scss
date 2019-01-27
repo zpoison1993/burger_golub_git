@@ -1,0 +1,26 @@
+.button {
+
+    // width: 97px;
+    // height: 36px;
+    padding: 10px 15px;
+    background-color: $order-color;
+    color: white;
+    font-size: rem(13px);
+    border-radius: 5px;
+    font-weight: 500;
+    // margin-top: 1.5%;
+}
+
+.order {
+    margin-left: 1%;
+}
+
+
+.more {
+    background-color: $review-btn;
+    padding: 15px 20px;
+    &:hover {
+        background-color: $review-btn-hover;
+        transition: 0.3s;
+    }
+}

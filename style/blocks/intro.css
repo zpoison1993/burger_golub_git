@@ -1,3 +1,103 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\000033}}
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../img/texture.png), url(../img/video-bg.jpg);
+  background-position: center;
+  background-size: cover,cover,cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000314}}
+.container--intro {
+  flex: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000319}}
+.header {
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 4.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000327}}
+.logo {
+  margin-top: 0.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000333}}
+.header__buttons {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: end; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000342}}
+.menu {
+  min-width: 65%;
+  min-height: inherit;
+  padding-top: 0.1%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000349}}
+ul.menu-list {
+  display: flex;
+  min-height: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000355}}
+li.menu-list__item {
+  font-size: rem(13px);
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000367}}
+  li.menu-list__item:not(:nth-child(7)):after {
+    content: "";
+    display: block;
+    background: #ffffff;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin: 0 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000382}}
+.intro__content {
+  flex: 0.8;
+  display: flex;
+  align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000388}}
+.intro__pic {
+  width: 49.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  padding-left: 4%;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003111}}
+.intro__pic-img {
+  width: 95%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003120}}
+.navigation-arrow {
+  width: 100%;
+  height: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003127}}
+  .navigation-arrow .arrow-scroll {
+    position: absolute;
+    bottom: 6.5%;
+    left: 47.5%;
+    width: 29px;
+    height: inherit;
+    background-image: url(../img/arrow-scroll.png);
+    background-position: center;
+    background-repeat: no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003139}}
+.intro__description {
+  padding-top: 7%;
+  padding-right: 1%; }
 
 /*# sourceMappingURL=intro.css.map */

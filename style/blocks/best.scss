@@ -12,22 +12,31 @@
 }
 
 .container--best {
-    padding-bottom: 119px;
-    
+    height: 100%;
+    padding-top: 11%
+    // padding-bottom: 6.5%;
+    // justify-content: center;
 }
 
 .best__list {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 32px;
+    padding: 0 3.8%;
 
     &-item {
         width:34%;
+        margin: 0 auto;
         .best__list-description {
+            width: 100%;
             text-align: center;
             font-weight: 300;
             line-height: 1.5em;
+            letter-spacing: -0.04em;
             color:black;
+        }
+        .best__list-image {
+            margin-bottom:8.5%; 
         }
     }
 }
@@ -44,10 +53,13 @@
    }
 }
 
-.title3 {
-    width: 98%;
-    font-family: 'lifehack';
-    font-size: 24.12px;
-    text-align: center;
-    margin-bottom: 20px;
-}
+// .title3 {
+//     width: 98%;
+//     font-family: 'lifehack';
+//     font-size: 24.12px;
+//     text-align: center;
+//     // margin-bottom: 20px;
+//     &--best {
+//         margin-bottom: 13px; 
+//     }
+// }

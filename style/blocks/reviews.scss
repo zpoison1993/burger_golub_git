@@ -36,29 +36,32 @@
     opacity:0;
     transition:opacity 0.3s;
     text-align: left;
-    padding: 30px 20px;
+    padding: 17% 8%;
 
 }
 
-.title4 {
-    font-family: 'gagalin';
-    color:white;
-    margin-bottom: 30px;
-}
+// .title4 {
+    
+//     font-family: 'gagalin';
+//     font-size: rem(14px);
+//     color:white;
+//     margin-bottom: 22px;
+    
+// }
 
 .reviews__content {
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color:white;
-    line-height: 1.5em;
-    margin-bottom: 15px;
+    line-height: 1.75em;
+    margin-bottom: 19px;
 }
 
-.more {
-    background-color: $review-btn;
-    padding: 15px 20px;
-    &:hover {
-        background-color: $review-btn-hover;
-        transition: 0.3s;
-    }
-}
+// .more {
+//     background-color: $review-btn;
+//     padding: 15px 20px;
+//     &:hover {
+//         background-color: $review-btn-hover;
+//         transition: 0.3s;
+//     }
+// }
