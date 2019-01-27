@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000311}}
 html {
   line-height: 1.15;
   /* 1 */
@@ -16,12 +17,14 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000323}}
 body {
   margin: 0; }
 
 /**
  * Render the `main` element consistently in IE.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000331}}
 main {
   display: block; }
 
@@ -29,6 +32,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000340}}
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -39,6 +43,7 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000353}}
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -51,6 +56,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000364}}
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -62,6 +68,7 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000376}}
 a {
   background-color: transparent; }
 
@@ -69,6 +76,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000385}}
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -80,6 +88,7 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\0000395}}
 b,
 strong {
   font-weight: bolder; }
@@ -88,6 +97,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003105}}
 code,
 kbd,
 samp {
@@ -99,6 +109,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003116}}
 small {
   font-size: 80%; }
 
@@ -106,6 +117,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003125}}
 sub,
 sup {
   font-size: 75%;
@@ -113,9 +125,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003133}}
 sub {
   bottom: -0.25em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003137}}
 sup {
   top: -0.5em; }
 
@@ -124,6 +138,7 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003148}}
 img {
   border-style: none; }
 
@@ -133,6 +148,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003160}}
 button,
 input,
 optgroup,
@@ -151,6 +167,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003176}}
 button,
 input {
   /* 1 */
@@ -160,6 +177,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003186}}
 button,
 select {
   /* 1 */
@@ -168,6 +186,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003195}}
 button,
 [type="button"],
 [type="reset"],
@@ -177,6 +196,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003206}}
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -187,6 +207,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003218}}
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -196,6 +217,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003229}}
 fieldset {
   padding: 0.35em 0.75em 0.625em; }
 
@@ -205,6 +227,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003240}}
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -222,12 +245,14 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003253}}
 progress {
   vertical-align: baseline; }
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003261}}
 textarea {
   overflow: auto; }
 
@@ -235,6 +260,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003270}}
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -245,6 +271,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003280}}
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -253,6 +280,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003290}}
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -262,6 +290,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003299}}
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
@@ -269,6 +298,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003308}}
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -280,12 +310,14 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003320}}
 details {
   display: block; }
 
 /*
  * Add the correct display in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003328}}
 summary {
   display: list-item; }
 
@@ -294,12 +326,14 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003339}}
 template {
   display: none; }
 
 /**
  * Add the correct display in IE 10.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/normalize\.scss}line{font-family:\00003347}}
 [hidden] {
   display: none; }
 
@@ -334,49 +368,60 @@ template {
   font-weight: 500;
   font-style: normal; }
 /* base.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\000035}}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000311}}
 html, body {
   font-family: 'ubuntu', sans-serif;
   height: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000316}}
 ul {
   margin: 0;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000321}}
 ul li {
   list-style-type: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000325}}
 a {
   color: inherit;
   text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000330}}
 button {
   border: none;
   cursor: pointer; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000335}}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000340}}
 .wrapper {
   overflow: hidden;
   min-width: 1100px;
   min-height: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000348}}
 .container {
   width: 95%;
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000355}}
 .section {
   height: 100vh;
   min-height: 650px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\000031}}
 .best {
   width: 100%;
   background-image: url(../img/bg_best.jpg);
@@ -386,35 +431,44 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000314}}
 .container--best {
   padding-bottom: 119px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000319}}
 .best__list {
   display: flex;
   justify-content: space-between;
   margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000324}}
   .best__list-item {
     width: 34%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000326}}
     .best__list-item .best__list-description {
       text-align: center;
       font-weight: 300;
       line-height: 1.5em;
       color: black; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000335}}
 .best__list-image {
   width: 100%;
   height: 100px;
   margin: 0 auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000341}}
 .best__list-image--meat {
   background: url("../img/meat.png") center center no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000341}}
 .best__list-image--hands {
   background: url("../img/hands.png") center center no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000341}}
 .best__list-image--natural {
   background: url("../img/natural.png") center center no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000347}}
 .title3 {
   width: 98%;
   font-family: 'lifehack';
@@ -422,11 +476,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-bottom: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\000031}}
 .reviews__list {
   height: 100%;
   display: flex;
   flex-wrap: wrap; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\000037}}
 .reviews__item {
   width: 25%;
   height: 50%;
@@ -435,11 +491,14 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   filter: grayscale(100%);
   position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000313}}
   .reviews__item:nth-child(1) {
     background-position-x: 60%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000321}}
   .reviews__item:hover .reviews__hover {
     opacity: 1; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000328}}
 .reviews__hover {
   position: absolute;
   top: 0;
@@ -452,11 +511,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   padding: 30px 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000343}}
 .title4 {
   font-family: 'gagalin';
   color: white;
   margin-bottom: 30px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000349}}
 .reviews__content {
   font-weight: 300;
   font-size: 14px;
@@ -464,20 +525,25 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5em;
   margin-bottom: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000357}}
 .more {
   background-color: #2f3234;
   padding: 15px 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\000032}}
 .fixed-menu {
   position: fixed;
   top: 80px;
   right: 45px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000310}}
 .fixed-menu__item {
   margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000314}}
   .fixed-menu__item-active .fixed-menu__link {
     border-color: #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000320}}
 .fixed-menu__link {
   width: 16px;
   height: 16px;
@@ -485,8 +551,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: block;
   border: 1px solid transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000328}}
   .fixed-menu__link:hover {
     border-color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000332}}
   .fixed-menu__link:before {
     content: "";
     display: block;
@@ -499,6 +567,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000323}}
 .intro {
   background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../img/texture.png), url(../img/video-bg.jpg);
   background-position: center;
@@ -508,6 +577,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000334}}
 .container--intro {
   flex: 1; }
 
@@ -515,29 +585,33 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("dust-and-scratches.jpg"), url("mountain.jpg");
     background-blend-mode: screen;
   } */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000345}}
 .header {
   display: flex;
   min-height: 70px;
   justify-content: space-between;
   align-items: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000352}}
 .logo {
-  width: 15%;
   margin-top: 0.5%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000358}}
 .header__buttons {
-  width: 85%;
   display: flex;
   align-items: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000364}}
 .menu {
   min-width: 65%;
   min-height: inherit; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000370}}
 ul.menu-list {
   display: flex;
   min-height: inherit; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000376}}
 li.menu-list__item {
   font-size: 13px;
   color: white;
@@ -545,6 +619,7 @@ li.menu-list__item {
   display: flex;
   align-items: center;
   margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\0000387}}
   li.menu-list__item:not(:nth-child(7)):after {
     content: "";
     display: block;
@@ -554,6 +629,7 @@ li.menu-list__item {
     border-radius: 50%;
     margin: 0 16px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003103}}
 .button {
   padding: 10px 15px;
   background-color: #e45028;
@@ -562,17 +638,24 @@ li.menu-list__item {
   border-radius: 5px;
   font-weight: 500; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003116}}
 .order {
   margin-left: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003124}}
 .intro__content {
   flex: 0.8;
   display: flex;
   align-items: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003130}}
 .intro__pic {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003136}}
   .intro__pic:after {
     content: "";
     display: block;
@@ -584,32 +667,39 @@ li.menu-list__item {
     height: 241px;
     background: url(../img/drops.png) no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003149}}
 .intro__description {
   width: 50%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003153}}
 .navigation-arrow {
   width: 100%;
   height: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003160}}
   .navigation-arrow .arrow-scroll {
     position: absolute;
-    top: 40%;
+    bottom: 10%;
     left: 50%;
     width: 29px;
-    height: 100%;
+    height: inherit;
     background-image: url(../img/arrow-scroll.png);
     background-position: center;
     background-repeat: no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003173}}
 .title1 {
   color: #f9b43b;
   font-family: 'gagalin';
   font-size: 72px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003178}}
   .title1--intro {
     margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003181}}
   .title1--best {
     color: black;
     text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/main2\.scss}line{font-family:\00003187}}
 .title2 {
   color: #fff;
   font-family: 'lifehack';
