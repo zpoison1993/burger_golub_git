@@ -2,6 +2,7 @@
 // $review-color:#505050;
 // $review-btn:#2f3234;
 @import 'blocks/vars.scss';
+@import 'blocks/mixins.scss';
 @import 'layout/normalize.scss';
 @import 'layout/fonts.scss';
 @import 'layout/base2.scss';
@@ -47,6 +48,7 @@
     min-height: 70px;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5% 4.5%;
 }
 
 .logo {
@@ -57,13 +59,17 @@
 
 .header__buttons {
     // width: 85%;
+    flex:1;
     display: flex;
     align-items: center;
+ 
+    padding-left: 7%;
 }
 
 .menu {
     min-width: 65%;
     min-height: inherit;
+    padding-top:0.1%; 
 }
 
 
@@ -75,7 +81,8 @@ ul.menu-list {
 
 li.menu-list__item {
         // flex:1;
-        font-size: 13px;
+        // font-size: 13px;
+        font-size: rem(13px);
         color: white;
         font-weight: 500;
         display: flex;
@@ -107,14 +114,14 @@ li.menu-list__item {
     padding: 10px 15px;
     background-color: $order-color;
     color: white;
-    font-size: 13px;
+    font-size: rem(13px);
     border-radius: 5px;
     font-weight: 500;
     // margin-top: 1.5%;
 }
 
 .order {
-    margin-left: 15px;
+    margin-left: 9px;
 }
 
 
@@ -132,18 +139,24 @@ li.menu-list__item {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 4%;
+    padding-left: 9%;
     position: relative;
     &:after{
         content: "";
         display: block;
         position: absolute;
-        top: 41%;
-        left: 45%;
-        transform: translate(-55%, -50%);
+        top: 15%;
+        right: 1%;
+        // transform: translate(-55%, -50%);
         width: 451px;
         height: 241px;
         background: url(../img/drops.png) no-repeat;
     }
+}
+.intro__pic-img {
+    width: 97%;
+    
 }
 
 .intro__description {
@@ -169,14 +182,18 @@ li.menu-list__item {
     }
 }
 
+.intro__description {
+    padding-top: 7%;
+    padding-left: 0.5%;
+}
 
 .title1 {
     color:#f9b43b;
     font-family: 'gagalin';
-    font-size: 72px;
+    font-size: rem(72px);
 
     &--intro {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     &--best {
         color:black;
@@ -187,6 +204,14 @@ li.menu-list__item {
 .title2 {
     color: #fff;
     font-family: 'lifehack';
-    font-size: 65px;
+    font-size: rem(65px);
+    line-height: 1em;
+    &--intro {
+        height:20%;
+        &:nth-child(1) {
+            padding-top: 4%;
+        }
+    }
+
 }
 

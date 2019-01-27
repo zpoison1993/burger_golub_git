@@ -9,7 +9,10 @@ Error: Undefined variable: "$review-btn".
 57: .more {
 58:     background-color: $review-btn;
 59:     padding: 15px 20px;
-60: }
+60:     &:hover {
+61:         background-color: $review-btn-hover;
+62:         transition: 0.3s;
+63:     }
 
 Backtrace:
 C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\reviews.scss:58
@@ -59,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$review-btn\".\A         on line 58 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\reviews.scss\A \A 53:     line-height: 1.5em;\A 54:     margin-bottom: 15px;\A 55: }\A 56: \A 57: .more {\A 58:     background-color: $review-btn;\A 59:     padding: 15px 20px;\A 60: }"; }
+  content: "Error: Undefined variable: \"$review-btn\".\A         on line 58 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\reviews.scss\A \A 53:     line-height: 1.5em;\A 54:     margin-bottom: 15px;\A 55: }\A 56: \A 57: .more {\A 58:     background-color: $review-btn;\A 59:     padding: 15px 20px;\A 60:     &:hover {\A 61:         background-color: $review-btn-hover;\A 62:         transition: 0.3s;\A 63:     }"; }

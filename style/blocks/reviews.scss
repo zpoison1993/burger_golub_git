@@ -57,4 +57,8 @@
 .more {
     background-color: $review-btn;
     padding: 15px 20px;
+    &:hover {
+        background-color: $review-btn-hover;
+        transition: 0.3s;
+    }
 }

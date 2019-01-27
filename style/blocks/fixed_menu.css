@@ -1,12 +1,12 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\000032}}
-.fixed-menu {
+.fixed-menu-list {
   position: fixed;
-  top: 80px;
-  right: 45px; }
+  top: 90px;
+  right: 50px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000310}}
 .fixed-menu__item {
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/fixed_menu\.scss}line{font-family:\0000314}}
   .fixed-menu__item-active .fixed-menu__link {
     border-color: #fff; }
