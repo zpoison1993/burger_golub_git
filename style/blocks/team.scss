@@ -1,0 +1,44 @@
+.team {
+    width: 100%;
+    // height:650px;
+    background-image: url(../img/team.jpg);
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    position: relative;
+}
+
+.team-sidebar {
+    width:49%;
+    height:100%;
+    position: absolute;
+    right:0%;
+    background: $team-sidebar;
+    // opacity: 0.6;
+    z-index: 5;
+
+}
+.team-content {
+    // z-index: 5;
+  padding: 5% 10%;
+}
+
+.team__item-description {
+    display: flex;
+
+}
+.team__item-photo {
+    // display: block;
+    width:132px;
+    // height: 100px;
+    // flex:0.2;
+    min-height: 100px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    // min-height: 132px;
+}
+

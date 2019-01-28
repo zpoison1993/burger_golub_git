@@ -464,6 +464,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
   color: white;
   margin-bottom: 22px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/titles\.scss}line{font-family:\0000348}}
+  .title4--team {
+    color: black; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/button\.scss}line{font-family:\000031}}
 .button {
@@ -643,6 +646,39 @@ li.menu-list__item {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/best\.scss}line{font-family:\0000350}}
 .best__list-image--natural {
   background: url("../img/natural.png") center center no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\000031}}
+.team {
+  width: 100%;
+  background-image: url(../img/team.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\0000314}}
+.team-sidebar {
+  width: 49%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  background: rgba(62, 64, 66, 0.9);
+  z-index: 5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\0000324}}
+.team-content {
+  padding: 5% 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\0000329}}
+.team__item-description {
+  display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\0000333}}
+.team__item-photo {
+  width: 132px;
+  min-height: 100px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\000031}}
 .reviews__list {
