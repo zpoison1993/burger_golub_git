@@ -1,0 +1,24 @@
+.menus {
+    width: 100%;
+    // height:650px;
+    background-image: url(../img/menu.jpg);
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    position: relative;
+}
+
+.menus__list {
+    display: flex;
+}
+
+.menus__item {
+    display:flex;
+}
+
+.menus__item-description {
+    flex: 0.8;
+}

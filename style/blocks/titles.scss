@@ -11,6 +11,15 @@
         color:black;
         text-align: center;   
     }
+    &--menus {
+        color:white;
+        // font-size: rem(64px);
+        font-size: 3rem;
+        -webkit-transform: rotate(-90deg); 
+        transform: rotate(-90deg);
+        height: 10%;
+        width:100%;
+    }
 }
 
 .title2 {
@@ -46,6 +55,7 @@
     color:white;
     margin-bottom: 22px;
     &--team {
-        color: black;
+        color: white;
+        
     }
 }
