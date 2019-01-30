@@ -68,3 +68,25 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+// .best__list-image{
+//     width:100%;
+//     height:100px;
+//     margin: 0 auto;
+// }
+.socials__item {
+    width:7.5%;
+    height:50%;
+}
+
+.socials__link {
+  display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+@each $socials in (vk, fb, inst, twitter) {
+   .socials__link--#{$socials} {
+       
+    background: url('../img/#{$socials}.png') center center no-repeat;
+   }
+}

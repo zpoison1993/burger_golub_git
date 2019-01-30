@@ -9,12 +9,20 @@
     border-radius: 5px;
     font-weight: 500;
     // margin-top: 1.5%;
+  
+
 }
 
-.order {
+
+.btn-order {
     margin-left: 1%;
 }
 
+.btn-clear {
+    margin-left: 1%;
+    background-color: rgba(0,0,0,0);
+    font-weight: 300;
+}
 
 .more {
     background-color: $review-btn;
