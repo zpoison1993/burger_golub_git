@@ -38,7 +38,15 @@
 
 .team__item {
     position: relative;
-
+    margin-bottom: 2%;
+    
+    &-title {
+    font-family: 'gagalin';
+    font-size: rem(14px);
+    color:white;
+    margin-bottom: 22px;
+    text-decoration: none;
+    }
 
     &:before {   
             content: "";
@@ -54,7 +62,7 @@
         
     }
     &--active {
-        .title4--team {
+        .team__item-title {
             color:$triangle;
         }
         &:before {   
