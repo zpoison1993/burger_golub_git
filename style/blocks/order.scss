@@ -11,13 +11,20 @@
     // position: relative;
 }
 
+.container--order {
+    // justify-content: center;
+    height: 100%;
+    padding: 11% 0;
+}
+
 .form {
     display: flex;
-    width: 85%;
+    width: 90%;
     // max-width: 940px;
-    margin: 0 auto;
+   margin:0 auto;
     &-left {
         flex:1;
+        margin-right: 2%;
     }
     &-right {
         flex:1;
@@ -27,6 +34,10 @@
 
 .form__row {
     display: flex;
+    margin-bottom: 3.9%;
+    &--radio {
+        
+    }
 
 }
 .form__block {
@@ -35,13 +46,24 @@
     &:last-child {
         margin-right: 0;
     }
+
+    &--comment {
+        .form__block-title {
+            padding-bottom: 1.2%;
+        }
+        
+    }
+
     &-title {
         color:white;
         font-size: rem(14px);
         font-weight: 300;
+        padding-bottom: 2.4%;
     }
     &--radio {
+        flex: initial;
         display: flex;
+        white-space: nowrap;
        
         .form__block-title {
             width: 85%;
@@ -60,9 +82,18 @@
     background: white;
     border: none;
     width: 100%;
-    padding: 5px 10px;
+    padding: 3.5% 3%;
+    // margin-top: 1%;
+    &--street {
+        padding: 1.5% 3%;
+    }
+    &--house {
+        padding:10% 3%;
+    }
 
 }
+
+
 
 .form__block-input--radio {
     width: 15%;

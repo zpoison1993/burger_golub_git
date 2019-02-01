@@ -21,9 +21,16 @@
     z-index: 5;
 
 }
+
+.accordeon--team {
+    margin-top: 9.5%;
+    margin-left: 4%;
+}
+
 .team-content {
     // z-index: 5;
-  padding: 5% 10%;
+  padding: 18% 10% 5% 18%;
+  height: 100%;
 }
 
 .team__item-description {
@@ -33,12 +40,17 @@
     font-size: rem(14px);   
     color:white;   
 
+
+}
+
+.team__item-duties {
+    
 }
 
 
 .team__item {
     position: relative;
-    margin-bottom: 2%;
+    margin-bottom: 8%;
     
     &-title {
     font-family: 'gagalin';
@@ -54,8 +66,8 @@
             // width:6px;
             // height:6px;
             position: absolute;
-            left:-3%;
-            top:35%;
+            left:-4%;
+            top:30%;
             border: 6px solid transparent;	
             border-top: 6px solid $triangle;
             // background-color: $triangle;
@@ -80,7 +92,15 @@
     }
     .team__item-description {
         height:20%;
+        margin-top: 4%;
+        margin-bottom: 10%;
     }
+
+    .team__item-duties {
+        padding-left: 5%;
+        padding-right: 2%;;
+    }
+
     }
 }
 
@@ -98,7 +118,7 @@
 
 .team__item-photo {
     position: relative;
-    width: 30%; /* Произвольная ширина, которая требуется для блока */
+    width: 54%; /* Произвольная ширина, которая требуется для блока */
     
     &:before {
         content: "";
@@ -124,5 +144,8 @@
 .team__item-job {
     font-size: rem(14px);
     font-weight: bold;
-    margin-bottom: 2%;
+    margin-bottom: 7%;
+}
+.team__item-responsibility {
+    line-height: 1.7em;
 }

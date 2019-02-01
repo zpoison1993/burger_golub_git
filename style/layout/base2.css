@@ -37,10 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000340}}
 .wrapper {
   overflow: hidden;
-  min-width: 1100px;
+  width: 100%;
   min-height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000349}}
 .container {
   width: 95%;
   max-width: 1100px;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   margin: 0 auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000357}}
 .section {
   height: 100vh;
   min-height: 650px; }

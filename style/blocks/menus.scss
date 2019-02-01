@@ -11,14 +11,71 @@
     position: relative;
 }
 
-.menus__list {
+.acco-menus__list {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
     display: flex;
+    // width: 50%;
+
 }
 
 .menus__item {
+    height: 100%;
     display:flex;
+    &--meat {
+        .menus-item__img{
+            background-image:linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(../img/menu_1.jpg);  
+        }    
+    }
+    &--vegetar {
+        .menus-item__img{
+            background-image:linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(../img/menu_2.jpg);  
+        }     
+    }
+    &--diet {
+        .menus-item__img{
+            background-image:linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(../img/menu_3.jpg);  
+        }
+    }
+
+    &--active {
+        .title1--acco {
+            color: $maintitlecolor;
+        }
+        .menus__item-text {
+            width:20rem;
+        }
+    }
+}
+.menus-item__img {
+    width:5rem;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    // text-decoration: none;
+    position:relative;
+}
+
+.menus__item-text {
+    width: 0;
+    overflow: hidden;
 }
 
 .menus__item-description {
-    flex: 0.8;
+    // width: 0; 
+    // overflow: hidden;
+    // width:20rem;
+    font-weight: 300;
+    font-size: rem(14px);
+    background: rgba(47, 50, 52, 0.93);
+    padding: 3.75rem 1.875rem;
+    line-height: 1.8;
+    height: 100%;
+    color: #fff;
+
+
 }
