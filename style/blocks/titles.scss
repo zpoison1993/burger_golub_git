@@ -13,9 +13,14 @@
     }
     &--best {
         color:black;
-        text-align: center;   
+        text-align: center; 
+        @include phones() {
+            font-size: 4rem;
+        }  
     }
-
+    &--team {
+        font-size: 3.7rem;
+    }
     &--menu {
         color:white;
     }
@@ -53,7 +58,7 @@
     &--intro {
         height:20%;
         &:nth-child(1) {
-            padding-top: 4%;
+            padding-top: 8%;
         }
     }
 
@@ -68,6 +73,12 @@
     // margin-bottom: 20px;
     &--best {
         margin-bottom: 13px; 
+
+        @include phones() {
+            font-size: 1.9rem;
+            text-align: left;
+            white-space: nowrap;
+        }
     }
 }
 

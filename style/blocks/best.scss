@@ -19,6 +19,11 @@
         padding-top: 30%;
         
     }
+    @include phones() {
+        
+        padding-top: 19.5%;
+        
+    }
     // padding-bottom: 6.5%;
     
 }
@@ -30,11 +35,22 @@
     padding: 0 3.8%;
     @include tablets() {
         margin-top: 5%;
+        padding: 0;
+    }
+    @include phones() {
+        flex-direction: column;
     }
 
     &-item {
         width:34%;
         margin: 0 auto;
+        @include phones() {
+            display: flex;
+            width:100%;
+            margin-bottom: 2%; 
+            // text-align: left;
+        }
+
         .best__list-description {
             width: 100%;
             text-align: center;
@@ -42,6 +58,13 @@
             line-height: 1.5em;
             letter-spacing: -0.04em;
             color:black;
+            @include phones() {
+             
+                text-align: left;
+                font-size: 1.2rem;
+            }
+
+
         }
         .best__list-image {
             margin-bottom:8.5%; 
@@ -56,11 +79,36 @@
     width:100%;
     height:100px;
     margin: 0 auto;
+
+    @include phones() {
+        width: 22rem;
+        padding-right: 1rem;
+
+        
+    }
 }
+
+
+.best__list-item:nth-child(2) {
+    .best__list-text {
+        @include phones() {
+            padding-left: 2rem;
+        // padding-left: 2rem;
+        }
+
+    }
+}
+
+
+
+
+
+
 @each $icons in (meat, hands, natural) {
    .best__list-image--#{$icons} {
        
     background: url('../img/#{$icons}.png') center center no-repeat;
+
    }
 }
 

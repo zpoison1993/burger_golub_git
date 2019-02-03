@@ -34,6 +34,10 @@
         margin-left: 0;
         margin-top: 7.5%;
     }
+    @include phones() {
+        margin-left: 0;
+        margin-top: 6.5%;
+    }
 }
 
 .team-content {
@@ -48,7 +52,10 @@
     padding-top: 26%;
     padding-left: 10%;
     // text-align: center;
-}
+    }
+    @include phones() {
+        padding-top: 29%;
+    }
 
 }
 
@@ -76,6 +83,9 @@
 
     @include tablets() {
         margin-bottom: 6%;
+    }
+    @include phones() {
+        margin-bottom: 8%;
     }
     
     &--active {
@@ -130,6 +140,10 @@
         font-size: 1.625rem;
         margin-bottom: 0;
     }
+    @include phones() {
+        font-size: 1.9rem;
+        margin-bottom: 0;
+    }
 
 
     &:before {   
@@ -169,7 +183,11 @@
 
 .team__item-img {
 	width: rem(100px);
-	height: rem(100px);
+    height: rem(100px);
+    @include phones() {
+        width: 8.25rem;
+        height: 8.25rem;
+    }
 	background-size: cover;
 	background-position: 61% center;
 	background-repeat: no-repeat;
@@ -209,12 +227,21 @@
         padding-top: 6%;
         margin-bottom: 3%;
     }
+    @include phones() {
+        padding-top: 6%;
+        margin-bottom: 3%;
+        font-size: rem(16px);
+    }
 }
 .team__item-responsibility {
     line-height: 1.7em;
     @include tablets() {
         width: 80%;
         margin: 0 auto;
+    }
+    @include phones() {
+        width: 100%;
+        font-size: rem(16px);
     }
    
 }
