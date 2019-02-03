@@ -15,10 +15,14 @@
 
 
 .btn-order {
-    margin-left: 0;
+    margin-left: 18px;
     @include tablets() {
         margin-left: 0;
     }
+    @include phones() {
+        margin-left: 0;
+    }
+
 }
 
 .btn-clear {
