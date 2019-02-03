@@ -13,16 +13,24 @@
 
 .container--best {
     height: 100%;
-    padding-top: 11%
+    padding-top: 11%;
+    @include tablets() {
+        
+        padding-top: 30%;
+        
+    }
     // padding-bottom: 6.5%;
-    // justify-content: center;
+    
 }
 
 .best__list {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 3%;
     padding: 0 3.8%;
+    @include tablets() {
+        margin-top: 5%;
+    }
 
     &-item {
         width:34%;
@@ -37,6 +45,9 @@
         }
         .best__list-image {
             margin-bottom:8.5%; 
+            @include tablets() {
+                margin-bottom: 12.5%;
+            }
         }
     }
 }

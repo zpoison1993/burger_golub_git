@@ -2,7 +2,7 @@
     width: 100%;
     // height:650px;
     background-image: url(../img/team.jpg);
-    // background-position: center;
+    background-position: center 0%;
     background-size: cover;
     background-repeat: no-repeat;
     // display: flex;
@@ -19,18 +19,37 @@
     background: $team-sidebar;
     // opacity: 0.6;
     z-index: 5;
+    @include tablets () {
+        width: inherit;
+        text-align: center;
+    }
 
 }
 
 .accordeon--team {
-    margin-top: 9.5%;
+    margin-top: 10.5%;
     margin-left: 4%;
+
+    @include tablets() {
+        margin-left: 0;
+        margin-top: 7.5%;
+    }
 }
 
 .team-content {
     // z-index: 5;
   padding: 18% 10% 5% 18%;
   height: 100%;
+  @include tablets () {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    padding-top: 26%;
+    padding-left: 10%;
+    // text-align: center;
+}
+
 }
 
 .team__item-description {
@@ -38,62 +57,54 @@
     height: 0;
     overflow:hidden;
     font-size: rem(14px);   
-    color:white;   
-
-
-}
-
-.team__item-duties {
+    color:white;  
     
+
+
 }
+
+// .team__list {
+//     @include tablets() {
+
+//     }
+// }
 
 
 .team__item {
-    position: relative;
-    margin-bottom: 8%;
-    
-    &-title {
-    font-family: 'gagalin';
-    font-size: rem(14px);
-    color:white;
-    margin-bottom: 22px;
-    text-decoration: none;
-    }
+    // position: relative;
+    margin-bottom: 9%;
 
-    &:before {   
-            content: "";
-            display: block;
-            // width:6px;
-            // height:6px;
-            position: absolute;
-            left:-4%;
-            top:30%;
-            border: 6px solid transparent;	
-            border-top: 6px solid $triangle;
-            // background-color: $triangle;
-        
+    @include tablets() {
+        margin-bottom: 6%;
     }
+    
     &--active {
         .team__item-title {
             color:$triangle;
+            &:before {   
+                content: "";
+                display: block;
+                // width:6px;
+                // height:6px;
+                position: absolute;
+                left:-20%;
+                top:-10%;
+                border: 0.4375rem solid transparent;	
+                border-bottom: 0.4375rem solid $triangle;
+                // background-color: $triangle;
         }
-        &:before {   
-            content: "";
-            display: block;
-            // width:6px;
-            // height:6px;
-            position: absolute;
-            left:-3%;
-            top:1%;
-            border: 6px solid transparent;	
-            border-bottom: 6px solid $triangle;
-            // background-color: $triangle;
+        
         
     }
     .team__item-description {
         height:20%;
-        margin-top: 4%;
+        margin-top: 3%;
         margin-bottom: 10%;
+        @include tablets() {
+            flex-direction: column;
+            align-items:center; 
+            margin-bottom: 6%;
+        }
     }
 
     .team__item-duties {
@@ -102,6 +113,39 @@
     }
 
     }
+}
+
+.team__item-title {
+    display: inline-flex;
+    font-family: 'gagalin';
+    font-size: rem(14px);
+
+
+
+    color:white;
+    margin-bottom: 0;
+    text-decoration: none;
+    position: relative;
+    @include tablets() {
+        font-size: 1.625rem;
+        margin-bottom: 0;
+    }
+
+
+    &:before {   
+        content: "";
+        display: block;
+        // width:6px;
+        // height:6px;
+        position: absolute;
+        left:-20%;
+        top:25%;
+        border: 0.4375rem solid transparent;	
+        border-top: 0.4375rem solid $triangle;
+        // background-color: $triangle;
+    
+}
+
 }
 
 // .team__item-photo {
@@ -116,28 +160,44 @@
 //     // min-height: 132px;
 // }
 
-.team__item-photo {
-    position: relative;
-    width: 54%; /* Произвольная ширина, которая требуется для блока */
+.team__item-pic {
+    display: flex;
+    justify-content: center;
+    width: 30%;
     
-    &:before {
-        content: "";
-    display: block;
-    padding-top: 100%; /* С помощью этого padding мы задаем высоту равную ширине блока */
-    }
 }
 
-.team__item-photofile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-position: 61% center; /* Задаем фон, если требуется */
-    background-repeat: no-repeat;
-    background-size: cover; /* Растягиваем фон под размеры блока, если требуется */
-    border-radius: 50%;
+.team__item-img {
+	width: rem(100px);
+	height: rem(100px);
+	background-size: cover;
+	background-position: 61% center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
 }
+
+// .team__item-photo {
+//     position: relative;
+//     width: 54%; /* Произвольная ширина, которая требуется для блока */
+    
+//     &:before {
+//         content: "";
+//     display: block;
+//     padding-top: 100%; /* С помощью этого padding мы задаем высоту равную ширине блока */
+//     }
+// }
+
+// .team__item-photofile {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     background-position: 61% center; /* Задаем фон, если требуется */
+//     background-repeat: no-repeat;
+//     background-size: cover; /* Растягиваем фон под размеры блока, если требуется */
+//     border-radius: 50%;
+// }
 
 
 
@@ -145,7 +205,16 @@
     font-size: rem(14px);
     font-weight: bold;
     margin-bottom: 7%;
+    @include tablets() {
+        padding-top: 6%;
+        margin-bottom: 3%;
+    }
 }
 .team__item-responsibility {
     line-height: 1.7em;
+    @include tablets() {
+        width: 80%;
+        margin: 0 auto;
+    }
+   
 }

@@ -7,6 +7,11 @@
 .reviews__item {
     width:25%;
     height:50%;
+
+    @include tablets() {
+        width:50%;
+        height: 25%;
+    }
     background-size: cover;
     background-position: center center;
 
@@ -38,6 +43,11 @@
     text-align: left;
     padding: 17% 8%;
 
+    @include tablets() {
+        text-align: center;
+        padding: 8% 14%;
+    }
+
 }
 
 // .title4 {
@@ -54,7 +64,10 @@
     font-size: rem(14px);
     color:white;
     line-height: 1.75em;
-    margin-bottom: 19px;
+    margin-bottom: 10%;
+    @include tablets() {
+        margin-bottom: 11%;
+    }
 }
 
 // .more {

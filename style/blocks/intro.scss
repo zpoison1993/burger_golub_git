@@ -31,18 +31,71 @@
 }
 
 .header__buttons {
-    width: 85%;
+    // width: 85%;
     // flex:0.9;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: end;
     // padding-left: 7%;
 }
 
+.header__links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   
+}
+
+.hamburger-menu-link {
+    display: none;
+    vertical-align: middle;
+    position: relative;
+    height:1.375rem;
+    align-items: center;
+    margin-left:15%;
+
+    @include tablets() {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hamburger-menu-link__bars {
+    background: white;
+    width:1.5rem;
+    height:0.3125rem;
+    border-radius:2px;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top:0;
+        background: white;
+        width:1.5rem;
+        height:0.3125rem;
+        border-radius:2px;
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom:0;
+        background: white;
+        width:1.5rem;
+        height:0.3125rem;
+        border-radius:2px;
+    }
+}
+
+
 .menu {
-    min-width: 65%;
+    // min-width: 65%;
+    // flex:1;
     min-height: inherit;
     padding-top:0.1%; 
+    @include tablets() {
+        display: none;
+    }
 }
 
 
@@ -83,6 +136,10 @@ li.menu-list__item {
     flex:0.8;
     display: flex;
     align-items: center;
+    @include tablets() {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .intro__pic {
@@ -93,6 +150,11 @@ li.menu-list__item {
     padding-bottom: 3%;
     padding-left: 4%;
     position: relative;
+
+    @include tablets() {
+        padding:0;
+        width: 65.5%;
+    }
     // &:after{
     //     content: "";
     //     display: block;
@@ -115,6 +177,14 @@ li.menu-list__item {
 
 .intro__description {
     // width: 50%;
+    padding-top: 7%;
+    padding-right: 1%;
+
+    @include tablets() {
+        text-align: center;
+        padding-right: 0;
+        padding-top: 0;
+    }
 }
 
 .navigation-arrow   {
@@ -136,10 +206,7 @@ li.menu-list__item {
     }
 }
 
-.intro__description {
-    padding-top: 7%;
-    padding-right: 1%;
-}
+
 
 // .title1 {
 //     color:#f9b43b;

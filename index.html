@@ -44,8 +44,14 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="header__links">
+                               <a href="#" class="button btn-order">ЗАКАЗАТЬ</a> 
+                               <a href="#" class="hamburger-menu-link">
+                                   <div class="hamburger-menu-link__bars"></div>
+                               </a>
+                            </div>
                             <!-- <button class="button order">ЗАКАЗАТЬ</button> -->
-                            <a href="#" class="button btn-order">ЗАКАЗАТЬ</a>
+                            
                         </div>
 
 
@@ -131,8 +137,11 @@
                                 <li class="team__item">
                                     <a href="#" class="team__item-title">ДЭНИЕЛ РЕДКЛИФ</a>
                                     <div class="team__item-description">
-                                        <div class="team__item-photo">
+                                        <!-- <div class="team__item-photo">
                                             <div class="team__item-photofile" style="background-image: url('./img/aphex.jpg')"></div>
+                                        </div> -->
+                                        <div class="team__item-pic">
+                                                <div class="team__item-img" style="background-image: url('./img/aphex.jpg')"></div>
                                         </div>
                                         <!-- <img src="./img/aphex.jpg" class="team__item-photo" alt="Фотография Дэниела Редклифа"> -->
                                         <div class="team__item-duties">
@@ -146,8 +155,11 @@
                                 <li class="team__item team__item--active">
                                     <a href="#" class="team__item-title">РИЧАРД ДЖЕЙМС</a>
                                     <div class="team__item-description">
-                                        <div class="team__item-photo">
+                                        <!-- <div class="team__item-photo">
                                             <div class="team__item-photofile" style="background-image: url('./img/aphex.jpg')"></div>
+                                        </div> -->
+                                        <div class="team__item-pic">
+                                                <div class="team__item-img" style="background-image: url('./img/aphex.jpg')"></div>
                                         </div>
                                         <!-- <img src="./img/aphex.jpg" class="team__item-photo" alt="Фотография Дэниела Редклифа"> -->
                                         <div class="team__item-duties">
@@ -161,8 +173,11 @@
                                 <li class="team__item">
                                     <a href="#" class="team__item-title">ДЖЕЙК ФИНН</a>
                                     <div class="team__item-description">
-                                        <div class="team__item-photo">
+                                        <!-- <div class="team__item-photo">
                                             <div class="team__item-photofile" style="background-image: url('./img/aphex.jpg')"></div>
+                                        </div> -->
+                                        <div class="team__item-pic">
+                                                <div class="team__item-img" style="background-image: url('./img/aphex.jpg')"></div>
                                         </div>
                                         <!-- <img src="./img/aphex.jpg" class="team__item-photo" alt="Фотография Дэниела Редклифа"> -->
                                         <div class="team__item-duties">
@@ -176,8 +191,11 @@
                                 <li class="team__item">
                                     <a href="#" class="team__item-title">НИКОЛАЙ ИВАНОВ</a>
                                     <div class="team__item-description">
-                                        <div class="team__item-photo">
+                                        <!-- <div class="team__item-photo">
                                             <div class="team__item-photofile" style="background-image: url('./img/aphex.jpg')"></div>
+                                        </div> -->
+                                        <div class="team__item-pic">
+                                                <div class="team__item-img" style="background-image: url('./img/aphex.jpg')"></div>
                                         </div>
                                         <!-- <img src="./img/aphex.jpg" class="team__item-photo" alt="Фотография Дэниела Редклифа"> -->
                                         <div class="team__item-duties">
@@ -422,33 +440,40 @@
                             <div class="form__row">
                                 <label for="" class="form__block form__block--comment">
                                     <div class="form__block-title">Комментарий</div>
-                                    <textarea type="text" class="form__block-input" cols="40" rows="4"></textarea>
+                                    <textarea type="text" class="form__block-input" cols="40" rows="4.5"></textarea>
                                 </label>
                             </div>
-                            <div class="form__row form__row--radio">
+                            <div class="form__row">
                                 <label for="" class="form__block form__block--radio">
-                                    <input type="radio" class="form__block-input form__block-input--radio" value="change">
+                                    <input type="radio" class="form__block-input form__block-input--radio" value="change" :checked>
+                                    <div class="form__block-input--radiofake"></div>  
                                     <div class="form__block-title">Потребуется сдача</div>
 
 
                                 </label>
                                 <label for="" class="form__block form__block--radio">
-                                    <input type="radio" class="form__block-input form__block-input--radio" value="card">
-                                    <div class="form__block-title">Оплата по карте</div>
-
-
-                                </label>
+                                        <input type="radio" class="form__block-input form__block-input--radio" value="card">
+                                        <div class="form__block-input--radiofake">
+                                            
+                                        </div>  
+                                        <div class="form__block-title">Оплата по карте</div>
+    
+    
+                                    </label>
 
 
                             </div>
-                            <div class="form__row">
+                            <div class="form__row form__row--checkbox"">
                                 <label for="" class="form__block form__block--checkbox">
-                                    <input type="checkbox" class="form__block-input form__block-input--checkbox">
+                                    <input type="checkbox"  class="form__block-input form__block-input--checkbox" value="1":checked>
+                                    <div class="form__block-input--radiofake">
+
+                                    </div> 
                                     <div class="form__block-title">Не перезванивать</div>
                                 </label>
 
                             </div>
-                            <div class="form__row">
+                            <div class="form__row form__row--btn">
                                 <a href="#" class="button btn-order">ЗАКАЗАТЬ</a>
                                 <a href="#" class="button btn-clear">Очистить</a>
                             </div>

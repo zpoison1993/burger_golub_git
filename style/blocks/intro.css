@@ -1,103 +1,69 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\000033}}
-.intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../img/texture.png), url(../img/video-bg.jpg);
-  background-position: center;
-  background-size: cover,cover,cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  position: relative; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss, in `tablets'
+        from line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000314}}
-.container--intro {
-  flex: 1; }
+52:     position: relative;
+53:     height:1.375rem;
+54:     align-items: center;
+55:     margin-left:15%;
+56: 
+57:     @include tablets() {
+58:         display: flex;
+59:         align-items: center;
+60:     }
+61: }
+62: 
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000319}}
-.header {
-  display: flex;
-  min-height: 70px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5% 4.5%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000327}}
-.logo {
-  margin-top: 0.5%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000333}}
-.header__buttons {
-  width: 85%;
-  display: flex;
-  align-items: center;
-  justify-content: end; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000342}}
-.menu {
-  min-width: 65%;
-  min-height: inherit;
-  padding-top: 0.1%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000349}}
-ul.menu-list {
-  display: flex;
-  min-height: inherit; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000355}}
-li.menu-list__item {
-  font-size: rem(13px);
-  color: white;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000367}}
-  li.menu-list__item:not(:nth-child(7)):after {
-    content: "";
-    display: block;
-    background: #ffffff;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    margin: 0 16px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000382}}
-.intro__content {
-  flex: 0.8;
-  display: flex;
-  align-items: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\0000388}}
-.intro__pic {
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 3%;
-  padding-left: 4%;
-  position: relative; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003111}}
-.intro__pic-img {
-  width: 95%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003120}}
-.navigation-arrow {
-  width: 100%;
-  height: 14px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003127}}
-  .navigation-arrow .arrow-scroll {
-    position: absolute;
-    bottom: 6.5%;
-    left: 47.5%;
-    width: 29px;
-    height: inherit;
-    background-image: url(../img/arrow-scroll.png);
-    background-position: center;
-    background-repeat: no-repeat; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003139}}
-.intro__description {
-  padding-top: 7%;
-  padding-right: 1%; }
-
-/*# sourceMappingURL=intro.css.map */
+Backtrace:
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss:57:in `tablets'
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss:57
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss, in `tablets'\A         from line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss\A \A 52:     position: relative;\A 53:     height:1.375rem;\A 54:     align-items: center;\A 55:     margin-left:15%;\A 56: \A 57:     @include tablets() {\A 58:         display: flex;\A 59:         align-items: center;\A 60:     }\A 61: }\A 62: "; }

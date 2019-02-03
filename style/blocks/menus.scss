@@ -46,6 +46,10 @@
         }
         .menus__item-text {
             width:20rem;
+            @include tablets() {
+                width: 25rem;
+                
+            }
         }
     }
 }
@@ -76,6 +80,9 @@
     line-height: 1.8;
     height: 100%;
     color: #fff;
+    @include tablets() {
+        font-size: 1.1rem;
+    }
 
 
 }

@@ -15,7 +15,10 @@
 
 
 .btn-order {
-    margin-left: 1%;
+    margin-left: 0;
+    @include tablets() {
+        margin-left: 0;
+    }
 }
 
 .btn-clear {
