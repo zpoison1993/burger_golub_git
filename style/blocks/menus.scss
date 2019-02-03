@@ -47,14 +47,21 @@
         .menus__item-text {
             width:20rem;
             @include tablets() {
-                width: 25rem;
-                
+                width: 25rem;  
             }
+            @include phones() {
+                width: 19rem;  
+            }
+
         }
     }
 }
 .menus-item__img {
     width:5rem;
+
+    @include phones() {
+        width:6rem;
+    }
     height: 100%;
     display: flex;
     background-size: cover;

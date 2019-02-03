@@ -15,7 +15,13 @@
     // display: block;
     position: absolute;
     bottom: 0%;
-    height:6vh;
+    height:9vh;
+    @include tablets() {
+        height:7vh;
+    }
+    @include phones() {
+        height:15vh;
+    }
     width: 100%;
     background: url(../img/footer_bg.jpg) center center no-repeat/ cover;
     // display: flex;
@@ -24,12 +30,22 @@
 }
 
 .container--footer {
+    
+    width: 94%;
+    height:100%;
+    height: 100%;
+   
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 94%;
-    height:100%;
+    @include phones() {
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding-top: 1.4rem;
+     }
 }
+
 
 .address {
     width: 50%;
@@ -41,6 +57,14 @@
     font-style: normal;
     font-weight: 300;
     font-size: rem(14px);
+
+    @include phones() {
+        width: 100%;
+        height: 40%;
+        padding:0;
+        font-size: rem(18px);
+        align-items: center;
+    }
     .phone {
         color: $phone;
         font-weight: bold;

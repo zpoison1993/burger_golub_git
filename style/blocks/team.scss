@@ -55,6 +55,7 @@
     }
     @include phones() {
         padding-top: 29%;
+        // padding-left: 0;
     }
 
 }
@@ -97,8 +98,8 @@
                 // width:6px;
                 // height:6px;
                 position: absolute;
-                left:-20%;
-                top:-10%;
+                left:-10%;
+                top:12%;
                 border: 0.4375rem solid transparent;	
                 border-bottom: 0.4375rem solid $triangle;
                 // background-color: $triangle;
@@ -152,8 +153,8 @@
         // width:6px;
         // height:6px;
         position: absolute;
-        left:-20%;
-        top:25%;
+        left:-10%;
+        top:38%;
         border: 0.4375rem solid transparent;	
         border-top: 0.4375rem solid $triangle;
         // background-color: $triangle;
@@ -228,7 +229,7 @@
         margin-bottom: 3%;
     }
     @include phones() {
-        padding-top: 6%;
+        padding-top: 5%;
         margin-bottom: 3%;
         font-size: rem(16px);
     }

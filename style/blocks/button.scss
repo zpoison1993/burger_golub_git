@@ -34,4 +34,7 @@
         background-color: $review-btn-hover;
         transition: 0.3s;
     }
+    @include phones() {
+        padding: 12px 28px; 
+    }
 }
