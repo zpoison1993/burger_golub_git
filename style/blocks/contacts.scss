@@ -70,32 +70,50 @@
         font-size: rem(18px);
         align-items: center;
     }
+
     .phone {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        @include phones() {
+              justify-content: center; 
+        }
+     
+    }
+    .phone-pic {
+        width:6%;
+        height: 40%;
+    }
+
+    .phone-number {
         color: $phone;
         font-weight: bold;
         position: relative;
-        padding-left: 4%;
-        &:before {
-            content: "";
-            width:12px;
-            height: 12px;
-            background: url(../img/phone.png) center center no-repeat;
-            position: absolute;
-            left:0%;
-            bottom: 0%;
+        // padding-left: 4%;
+        // &:before {
+        //     content: "";
+        //     width:12px;
+        //     height: 12px;
+        //     background: url(../img/phone.png) center center no-repeat;
+        //     position: absolute;
+        //     left:0%;
+        //     bottom: 0%;
 
 
-        }
+        // }
     }
 }
 
 .socials__list {
 
-    width: 50%;
+    width: 100%;
     height:100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include phones() {
+        justify-content: center;
+    }
 }
 
 // .best__list-image{
@@ -104,8 +122,14 @@
 //     margin: 0 auto;
 // }
 .socials__item {
-    width:7.5%;
-    height:50%;
+    width:7.3%;
+    // height:50%;
+    @include tablets() {
+        width: 9.3%;
+    }
+    display: flex;
+    align-items: center;
+
 }
 
 .socials__link {
@@ -113,9 +137,33 @@
     width: 100%;
     height: 100%;
 }
-@each $socials in (vk, fb, inst, twitter) {
-   .socials__link--#{$socials} {
-       
-    background: url('../img/#{$socials}.png') center center no-repeat;
-   }
+
+.social-pic {
+    fill: white;
+    width: 1.5rem;
+    height: 1.4rem;
+    &--vk {
+        height: 1.5rem;
+    }
+    @include phones() {
+    width: 1.6rem;
+    height: 1.6rem;
+        .social-pic--vk {
+        height: 1.65rem;
+    }
+    }
+    
+
+    opacity: 0.2;
+    transition: 0.5s;
+    &:hover {
+        opacity:1;
+    }
 }
+
+// @each $socials in (vk, fb, inst, twitter) {
+//    .socials__link--#{$socials} {
+       
+//     background: url('../img/#{$socials}.png') center center no-repeat;
+//    }
+// }

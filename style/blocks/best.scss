@@ -79,15 +79,29 @@
     width:100%;
     height:100px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
 
     @include phones() {
         width: 22rem;
         padding-right: 1rem;
+        
 
         
     }
 }
 
+.natural {
+    @include phones() {
+        
+            width: 14rem;
+            margin-right: 1rem;
+          
+    }
+}
 
 .best__list-item:nth-child(2) {
     .best__list-text {
@@ -114,12 +128,18 @@
 
 
 
-@each $icons in (meat, hands, natural) {
-   .best__list-image--#{$icons} {
+// @each $icons in (meat, hands, natural) {
+//    .best__list-image--#{$icons} {
        
-    background: url('../img/#{$icons}.png') center center no-repeat;
+//     background: url('../img/#{$icons}.png') center center no-repeat;
 
-   }
+//    }
+// }
+
+.best__list-svg {
+    text-align: center;
+    width: 83%;
+    height:6.25rem;
 }
 
 // .title3 {
