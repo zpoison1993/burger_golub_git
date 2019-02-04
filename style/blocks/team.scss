@@ -98,8 +98,23 @@
                 // width:6px;
                 // height:6px;
                 position: absolute;
-                left:-10%;
-                top:12%;
+                left:0rem;
+                top:0rem;
+                margin-left: -1.1rem;
+                margin-top: -0.2rem;
+
+                @include tablets() {
+                margin-left: -1.1rem;
+                margin-top: 0.5rem;  
+                }
+
+                @include phones() {
+                 margin-left: -1.1rem;
+                margin-top: 0.5rem;  
+                }
+
+
+
                 border: 0.4375rem solid transparent;	
                 border-bottom: 0.4375rem solid $triangle;
                 // background-color: $triangle;
@@ -130,7 +145,7 @@
     display: inline-flex;
     font-family: 'gagalin';
     font-size: rem(14px);
-
+    background-color: rgba(0, 0, 0, 0);
 
 
     color:white;
@@ -153,8 +168,22 @@
         // width:6px;
         // height:6px;
         position: absolute;
-        left:-10%;
-        top:38%;
+        left:0rem;
+        top:0rem;
+        margin-left: -1rem;
+        margin-top: 0.4rem;
+
+        @include tablets() {
+            margin-left: -1rem;
+            margin-top: 0.5rem;  
+        }
+
+        @include phones() {
+            margin-left: -1rem;
+            margin-top: 1rem;  
+        }
+        
+
         border: 0.4375rem solid transparent;	
         border-top: 0.4375rem solid $triangle;
         // background-color: $triangle;

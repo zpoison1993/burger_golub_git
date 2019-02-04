@@ -54,7 +54,7 @@
     align-items: center;
     margin-left:15%;
 
-    @include tablets() {
+    @include laptops() {
         display: flex;
         align-items: center;
     }
@@ -97,7 +97,8 @@
     // flex:1;
     min-height: inherit;
     padding-top:0.1%; 
-    @include tablets() {
+    white-space: nowrap;
+    @include laptops() {
         display: none;
     }
 }
@@ -218,10 +219,17 @@ li.menu-list__item {
         }
         width: 29px;
         height: inherit;
-        background-image: url(../img/arrow-scroll.png);
-        background-position: center;
-        background-repeat: no-repeat;
+        // background-image: url(../img/arrow-scroll.png);
+        // background-position: center;
+        // background-repeat: no-repeat;
+
+        .arrow-scroll__icon {
+            width: inherit;
+            height: inherit;
+        }
     }
+
+
 }
 
 

@@ -64,6 +64,8 @@
 // }
 
 .reviews__content {
+    
+    overflow: hidden;
     font-weight: 300;
     font-size: rem(14px);
     color:white;
@@ -71,6 +73,7 @@
     margin-bottom: 10%;
     @include tablets() {
         margin-bottom: 11%;
+        max-height: 55%;
     }
     @include phones() {
         display: none;
