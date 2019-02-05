@@ -15,12 +15,12 @@
     // display: block;
     position: absolute;
     bottom: 0%;
-    height:9vh;
-    @include tablets() {
-        height:7vh;
-    }
+    height:10%;
+    // @include tablets() {
+    //     height:7vh;
+    // }
     @include phones() {
-        height:15vh;
+        height:13%;
     }
     width: 100%;
     background: center/ cover  no-repeat url("../img/footer_bg.jpg");
@@ -72,7 +72,7 @@
     }
 
     .phone {
-        height: 3rem;
+        height: 4rem;
         display: flex;
         align-items: center;
         @include phones() {

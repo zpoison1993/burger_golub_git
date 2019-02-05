@@ -1233,18 +1233,14 @@ li.menu-list__item {
 .footer {
   position: absolute;
   bottom: 0%;
-  height: 9vh;
+  height: 10%;
   width: 100%;
   background: center/cover no-repeat url("../img/footer_bg.jpg");
   color: white; }
-  @media screen and (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/contacts\.scss}line{font-family:\0000314}}
-    .footer {
-      height: 7vh; } }
   @media screen and (max-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/contacts\.scss}line{font-family:\0000314}}
     .footer {
-      height: 15vh; } }
+      height: 13%; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/contacts\.scss}line{font-family:\0000333}}
 .container--footer {
@@ -1287,7 +1283,7 @@ li.menu-list__item {
       align-items: center; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/contacts\.scss}line{font-family:\0000374}}
   .address .phone {
-    height: 3rem;
+    height: 4rem;
     display: flex;
     align-items: center; }
     @media screen and (max-width: 480px) {
