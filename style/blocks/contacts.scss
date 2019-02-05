@@ -77,13 +77,17 @@
         align-items: center;
         @include phones() {
               justify-content: center; 
+              align-items: unset;
         }
      
     }
     .phone-pic {
         width:6%;
         height: 40%;
-    }
+        @include phones() {
+            height: 50%;
+        }
+     }
 
     .phone-number {
         color: $phone;
