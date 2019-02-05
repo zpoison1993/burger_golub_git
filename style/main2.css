@@ -1027,8 +1027,7 @@ li.menu-list__item {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\00003207}}
 .team__item-pic {
   display: flex;
-  justify-content: center;
-  width: 30%; }
+  justify-content: center; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/team\.scss}line{font-family:\00003214}}
 .team__item-img {
