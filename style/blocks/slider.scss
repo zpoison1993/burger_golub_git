@@ -1,0 +1,111 @@
+.slider-section {
+    background: linear-gradient(0deg,#f9b43b,#eb8c38,#f9b43b);
+    position: relative;
+}
+
+.container--slider {
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   height:100%;
+}
+
+.slider-array {
+    overflow: hidden;
+}
+.slide {
+    display: flex;
+    align-items: center;
+    // position: relative;
+}
+
+.navigation {
+    width:10%;
+    display: flex;
+    align-items: center;
+}
+
+.previous-button, .next-button {
+    background: rgba(0,0,0,0);
+    width: 100%;
+   
+}
+
+.slide-left{
+    width:50%;
+}
+
+.slide-right {
+    width:50%;
+}
+
+
+
+.prev-svg {
+    -webkit-transform: rotate(90deg);
+-ms-transform: rotate(90deg); 
+transform: rotate(90deg);
+width: 100%;
+}
+
+
+.next-svg {
+    -webkit-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg); 
+transform: rotate(-90deg);
+width: 100%;
+}
+
+.burger-img {
+    // display: inline-block;
+    // width:85%;
+  
+}
+
+.burger-pic {
+    // display: block;
+    width: 100%;
+}
+
+.composition {
+    @include icons_slide;
+    top:10%;
+    left:10%;
+
+    &-svg {
+        display: block;
+        width: 60%;
+        height: 60%;
+    }
+}
+
+
+.calories {
+    @include icons_slide;
+    bottom: 10%;
+    left:10%;
+
+
+    &-svg {
+        display: block;
+        width: 60%;
+        height: 60%;
+    }
+}
+
+
+.price-and-order {
+    display:flex;
+    align-items: center;
+}
+
+.roubles {
+    font-size: 1.9rem;
+}
+
+
+.slide-description {
+    color:white;
+}
+
+

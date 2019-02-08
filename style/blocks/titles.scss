@@ -63,6 +63,16 @@
             padding:0 2rem;
         }
     }
+
+    &--slider {
+        color:white;
+    }
+
+    &--price {
+        color:#e25028;
+        font-size: 4.2rem;
+    }
+
 }
 
 .title2 {
@@ -111,5 +121,9 @@
             margin: 0 0 14% 0;
         }
         
+    }
+
+    &--composition {
+        margin:0;
     }
 }

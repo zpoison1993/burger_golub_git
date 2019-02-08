@@ -22,6 +22,9 @@
     @include phones() {
         margin-left: 0;
     }
+    &-slide {
+        margin-top:7%;
+    }
 
 }
 

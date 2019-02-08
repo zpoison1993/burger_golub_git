@@ -18,5 +18,19 @@
 	@media screen and (max-width: $phones) {
 	  @content;
 	}
-  }
+	}
+	
+
+	@mixin icons_slide {
+		background:rgba(228, 80, 40, 0.44);
+    border-radius: 2px;
+    position: absolute;
+    width:5rem;
+    height:5rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
 
