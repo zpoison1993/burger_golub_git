@@ -46,7 +46,24 @@ function openMenu() {
 
         document.addEventListener('keydown',function(event){
             if(event.keyCode == 27){
-                menu.style.display = "none";
+                setTimeout(function close(){
+                    // while(opacity>0) {
+                    //     opacity -= 0.05;
+                    //     menu.style.opacity = opacity;
+    
+                    // };
+                    // menu.style.display = "none";
+    
+                    if (opacity > 0 ) {
+                        opacity -= 0.1;
+                        menu.style.opacity = opacity;
+                        setTimeout(close(),1000);
+                    }
+    
+                    else {
+                        menu.style.display = "none";
+                    }
+                },1000);
             }
         });
 
