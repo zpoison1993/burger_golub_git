@@ -23,7 +23,18 @@
         margin-left: 0;
     }
     &-slide {
-        margin-top:7%;
+        margin-top:10%;
+        margin-left: 7%;
+
+        @include tablets() {
+            margin-top:8%;
+            margin-left: 6%;  
+        }
+        @include phones() {
+            padding: 12px 18px;
+            margin-top: 6%;
+            margin-left: 6%;
+        }
     }
 
 }

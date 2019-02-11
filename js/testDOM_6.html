@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="width:300px; height:100px; background-color: cadetblue; margin: 0 auto;">
+        Оборачивающий div
+    </div>
+    <script>
+        const container = document.querySelector('.container');
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'name';
+        container.appendChild(input);
+
+        const button = document.createElement('button');
+        button.type = 'submit';
+        button.name = 'show';
+        button.style.padding = '10px 20px';
+        button.textContent='Отправить';
+        container.appendChild(button);
+        button.addEventListener('click', function(e){
+            e.preventDefault();
+            console.log(input.value);
+            input.value='';
+        })
+
+
+
+    </script>
+</body>
+</html>

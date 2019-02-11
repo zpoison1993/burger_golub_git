@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="container">
+        Оборачивающий div
+    </div> -->
+    <script>
+        // const container = document.querySelector('.container');
+        const link = document.createElement('a');
+        link.href = 'https://loftschool.com';
+        link.textContent = 'ССЫЛКА';
+        link.style.cursor = 'pointer';
+        document.body.appendChild(link);
+
+        var HREF =  link.href;
+        link.addEventListener('click', function(e){
+            e.preventDefault();
+            console.log('Я кликнул на ссылку ' + HREF);
+        })
+
+
+
+    </script>
+</body>
+</html>

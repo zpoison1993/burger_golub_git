@@ -66,11 +66,20 @@
 
     &--slider {
         color:white;
+        line-height: 3.9rem;
+        @include phones() {
+            font-size: 3.7rem;
+          
+        }
     }
 
     &--price {
         color:#e25028;
         font-size: 4.2rem;
+        @include phones() {
+            font-size:4rem;
+          
+        }
     }
 
 }
@@ -125,5 +134,13 @@
 
     &--composition {
         margin:0;
+    }
+
+    &--calories {
+        margin-top:38%;
+        margin-bottom: 0;
+        @include phones() {
+            margin-top: 56%;
+        }
     }
 }

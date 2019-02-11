@@ -23,11 +23,14 @@
 
 	@mixin icons_slide {
 		background:rgba(228, 80, 40, 0.44);
-    border-radius: 2px;
+    border-radius: 5px;
     position: absolute;
-    width:5rem;
-    height:5rem;
-    
+    width:5.7rem;
+    height:5.7rem;
+			@include phones(){
+				width:6.7rem;
+    		height:6.7rem;
+			}
     display: flex;
     flex-direction: column;
     justify-content: center;

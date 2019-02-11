@@ -1,20 +1,23 @@
 /*
-Error: Undefined mixin 'phones'.
-        on line 3 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\slider.scss, in `phones'
-        from line 3 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\slider.scss
+Error: Undefined mixin 'tablets'.
+        on line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss, in `tablets'
+        from line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss
 
-1: .slider-section {
-2:     background: linear-gradient(0deg,#f9b43b,#eb8c38,#f9b43b);
-3:     @include phones() {
-4:         position: relative;
-5:     }
-6:     // position: relative;
-7: }
-8: 
+5:     position:absolute;
+6:     top:0;
+7:     left:0;
+8:     right:0;
+9:     bottom:0;
+10:     @include tablets() {
+11:     min-height: 850px;
+12:     }
+13:    @include phones() {
+14:     min-height: 730px;
+15:    }
 
 Backtrace:
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\slider.scss:3:in `phones'
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\slider.scss:3
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss:10:in `tablets'
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 3 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\slider.scss, in `phones'\A         from line 3 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\slider.scss\A \A 1: .slider-section {\A 2:     background: linear-gradient(0deg,#f9b43b,#eb8c38,#f9b43b);\A 3:     @include phones() {\A 4:         position: relative;\A 5:     }\A 6:     // position: relative;\A 7: }\A 8: "; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss, in `tablets'\A         from line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss\A \A 5:     position:absolute;\A 6:     top:0;\A 7:     left:0;\A 8:     right:0;\A 9:     bottom:0;\A 10:     @include tablets() {\A 11:     min-height: 850px;\A 12:     }\A 13:    @include phones() {\A 14:     min-height: 730px;\A 15:    }"; }

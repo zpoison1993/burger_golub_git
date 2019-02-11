@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="container">
+        Оборачивающий div
+    </div> -->
+    <script>
+        // const container = document.querySelector('.container');
+        var div = document.createElement('div');
+        div.className = "outer-div";
+        div.textContent = "Этот элемент создан при помощи DOM API";
+
+        document.body.appendChild(div);
+        
+        var div2 = document.createElement('div');
+        div2.className = "inner-div";
+        div2.textContent = "Этот элемент тоже создан при помощи DOM API";
+        
+        div.appendChild(div2);
+
+
+
+    </script>
+</body>
+</html>
