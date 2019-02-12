@@ -147,7 +147,7 @@ width: 86%;
 
     @include phones() {
         top: 6.5%;
-        left: 1%;
+        left: 5%;
     }
 
 
@@ -157,6 +157,109 @@ width: 86%;
         width: 60%;
         height: 60%;
     }
+}
+
+.composition-content {
+    background:rgba(255, 255, 255, 0.9);
+    border-radius: 0.3125rem;
+    // width: 16.875rem;
+    z-index: 100;
+    width: rem(275px);
+    
+
+    position: absolute;
+    top: 14%;
+    left: 10%;
+
+    @include tablets() {
+        width: 19.1875rem;
+        top: 12%;
+        left: 26%;
+    }
+
+    @include phones() {
+        // width: 26.1875rem;
+        width:69%;
+        top: 6.5%;
+        left: 23.5%;
+    }
+        display: none;
+        // display:flex; in JS code
+    
+    // left: 100%;
+}
+
+ul.content__list {
+    width:88%;
+    margin: 0 auto;
+    padding:5% 0%;
+    @include tablets() {
+        width: 70%;
+    }
+}
+
+li.content__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+
+    @include tablets() {
+        margin-bottom: 4%;
+    }
+
+    .content-svg {
+        width: 2.5rem;
+        height:2.5rem;
+    }
+    .content-name {
+        font-size: rem(14px);
+        font-weight: 500;
+        margin: 0 1.5%;
+        @include tablets() {
+            margin: 0 8.5%; 
+        }
+
+        @include phones() {
+            font-size: rem(16px);
+            font-weight: 600;
+        }
+    }
+    .content-weigh{
+        font-size: rem(14px);
+        font-weight: 400;
+        margin-left: auto;
+        @include phones() {
+            font-size: rem(16px);
+        }
+    }
+
+}
+
+.close-wrapper {
+    display: none;
+    @include tablets() {
+        display: inherit;
+        width:15%;
+        
+    }
+    @include phones() {
+        
+        width:17%;
+        
+    }
+}
+.content-close {
+    background: rgba(0, 0, 0, 0);
+    width:rem(20px);
+    height: rem(20px);
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+svg.close--slider {
+    fill: $coral;
 }
 
 
@@ -171,7 +274,7 @@ width: 86%;
     }
     @include phones() {
         top: 5%;
-        left: 83%;
+        left: 75%;
     }
 
     background:rgba(228, 80, 40, 0);

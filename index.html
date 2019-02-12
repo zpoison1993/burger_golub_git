@@ -22,25 +22,25 @@
                             <nav class="menu">
                                 <ul class="menu-list">
                                     <li class="menu-list__item">
-                                        <a href="#" class="menu-list__item-link">О НАС</a>
+                                        <a href="#best" class="menu-list__item-link">О НАС</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="menu-list__item-link">БУРГЕРЫ</a>
+                                        <a href="#slider" class="menu-list__item-link">БУРГЕРЫ</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="menu-list__item-link">КОМАНДА</a>
+                                        <a href="#team" class="menu-list__item-link">КОМАНДА</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="menu-list__item-link">МЕНЮ</a>
+                                        <a href="#menus" class="menu-list__item-link">МЕНЮ</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="menu-list__item-link">ОТЗЫВЫ</a>
+                                        <a href="#reviews" class="menu-list__item-link">ОТЗЫВЫ</a>
                                     </li>
                                     <li class="menu-list__item">
                                         <a href="#" class="menu-list__item-link">КАК МЫ РАБОТАЕМ</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="menu-list__item-link">КОНТАКТЫ</a>
+                                        <a href="#contacts" class="menu-list__item-link">КОНТАКТЫ</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -72,7 +72,7 @@
 
                     </main>
                     <nav class="navigation-arrow">
-                        <a href="#block2" class="arrow-scroll">
+                        <a href="#best" class="arrow-scroll">
                             <svg class="arrow-scroll__icon">
                                 <use xlink:href="./img/icons/sprite.svg#scroll"></use>
                             </svg>
@@ -84,7 +84,7 @@
 
 
             </section>
-            <section class="section best section-centered" data-anchor="block2">
+            <section class="section best section-centered" id="best">
                 <div class="container container--best">
                     <h2 class="title1 title1--best title1--center">МЫ ЛУЧШИЕ</h2>
                     <ul class="best__list">
@@ -145,7 +145,7 @@
 
             </section>
 
-            <section class="section slider-section">
+            <section class="section slider-section" id="slider">
                 <div class="container container--slider">
                     <div class="navigation">
                         <button type="button" class="previous-button">
@@ -160,11 +160,66 @@
                                 <div class="burger-img">
                                     <img src="./img/burger1.png" class="burger-pic" alt="Черный бургер">
                                 </div>
-                                <div class="composition">
+                                <button type="button" class="composition">
                                     <svg class="composition-svg">
                                         <use xlink:href="./img/icons/sprite.svg#burger"></use>
                                     </svg>
                                     <h4 class="title4 title4--composition">СОСТАВ</h4>
+                                </button>
+                                <div class="composition-content">
+                                    
+                                    <ul class="content__list">
+                                        <li class="content__item">
+                                            <svg class="content-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                            </svg>
+                                            <div class="content-name">Говядина</div>
+                                            <div class="content-weigh">300 г</div>
+                                        </li>
+                                        <li class="content__item">
+                                            <svg class="content-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                            </svg>
+                                            <div class="content-name">Булочки</div>
+                                            <div class="content-weigh">100 г</div>
+                                        </li>
+                                        <li class="content__item">
+                                            <svg class="content-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#green"></use>
+                                            </svg>
+                                            <div class="content-name">Зелень</div>
+                                            <div class="content-weigh">70 г</div>
+                                        </li>
+                                        <li class="content__item">
+                                            <svg class="content-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                            </svg>
+                                            <div class="content-name">Соус</div>
+                                            <div class="content-weigh">150 г</div>
+                                        </li>
+                                        <li class="content__item">
+                                            <svg class="content-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
+                                            </svg>
+                                            <div class="content-name">Овощи</div>
+                                            <div class="content-weigh">200 г</div>
+                                        </li>
+                                        <li class="content__item">
+                                            <svg class="content-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                            </svg>
+                                            <div class="content-name">Сыр</div>
+                                            <div class="content-weigh">80 г</div>
+                                        </li>
+                                    </ul>
+                                    <div class="close-wrapper">
+                                        <button type="button" class="content-close">
+                                            <svg class="close close--slider">
+                                                <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                            </svg>
+                                    </button>
+                                    </div>
+                                    
                                 </div>
                                 <div class="calories">
                                     <svg class="calories-svg">
@@ -187,7 +242,7 @@
                                 </div>
                                 <div class="price-and-order">
                                     <div class="title1 title1--price">500<span class="roubles">РУБЛЕЙ</span></div>
-                                    <button type="submit" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</button>
+                                    <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
                                 </div>
                             </div>
 
@@ -206,7 +261,7 @@
             </section>
 
 
-            <section class="section team">
+            <section class="section team" id="team">
                 <div class="team-sidebar">
                     <div class="team-content">
                         <h2 class="title1 title1--team">КОМАНДА</h2>
@@ -294,7 +349,7 @@
                 </div>
             </section>
 
-            <section class="section menus">
+            <section class="section menus" id="menus">
                 <h2 class="title1 title1--menu">МЕНЮ</h2>
                 <!-- <div class="accordeon accordeon--menus"> -->
                 <ul class="acco-menus__list">
@@ -366,7 +421,7 @@
                 <!-- </div> -->
             </section>
 
-            <section class="section reviews">
+            <section class="section reviews" id="reviews">
                 <ul class="reviews__list">
                     <li class="reviews__item" style="background-image: url('./img/photo-1.png')">
                         <div class="reviews__hover">
@@ -475,7 +530,7 @@
                 </ul>
             </section>
 
-            <section class="section order">
+            <section class="section order" id="order">
                 <div class="container container--order">
                     <h2 class="title1 title1--order">ЗАКАЖИТЕ ДОСТАВКУ</h2>
                     <form action="" class="form">
@@ -574,7 +629,7 @@
 
             </section>
 
-            <section class="section contacts">
+            <section class="section contacts" id="contacts">
                 <div class="yandex-maps">
 
                 </div>
@@ -651,22 +706,22 @@
                     <div class="mobile-content">
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link">О НАС</a>
+                                <a href="#best" class="mobile-menu__link">О НАС</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link">БУРГЕРЫ</a>
+                                <a href="#slider" class="mobile-menu__link">БУРГЕРЫ</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link">КОМАНДА</a>
+                                <a href="#team" class="mobile-menu__link">КОМАНДА</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link">МЕНЮ</a>
+                                <a href="#menus" class="mobile-menu__link">МЕНЮ</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link">ОТЗЫВЫ</a>
+                                <a href="#reviews" class="mobile-menu__link">ОТЗЫВЫ</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link">КОНТАКТЫ</a>
+                                <a href="#contacts" class="mobile-menu__link">КОНТАКТЫ</a>
                             </li>
                         </ul>
                     </div>
