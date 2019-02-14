@@ -46,6 +46,7 @@
         }
         .menus__item-text {
             width:20rem;
+            transition: width 0.3s;
             @include tablets() {
                 width: 25rem;  
             }
@@ -73,6 +74,7 @@
 
 .menus__item-text {
     width: 0;
+    transition: width 0.3s;
     overflow: hidden;
 }
 

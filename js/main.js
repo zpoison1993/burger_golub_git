@@ -152,3 +152,50 @@ function openComponents() {
 }
 
 openComponents();
+
+
+//
+//Аккордеон секции команда
+
+function teamOpen() {
+    const items = document.querySelectorAll('.team__item');
+    for(const item of items) {
+        item.addEventListener('click', function(event){
+            const curItem = event.currentTarget;
+            if(curItem.classList.contains('team__item--active')) {
+                curItem.classList.remove('team__item--active');
+            } else {
+                Array.from(items).forEach(function(item) {
+                    item.classList.remove('team__item--active');
+                } );
+
+                curItem.classList.add('team__item--active');
+            }
+    });
+}
+}
+
+teamOpen();
+
+//
+// Аккордеон секции МЕНЮ
+
+function menusOpen() {
+    const menuItems = document.querySelectorAll('.menus__item');
+    for(const menuItem of menuItems) {
+        menuItem.addEventListener('click', function(event){
+            const curMenuItem = event.currentTarget;
+            if(curMenuItem.classList.contains('menus__item--active')) {
+                curMenuItem.classList.remove('menus__item--active');
+            } else {
+                Array.from(menuItems).forEach(function(menuItem) {
+                    menuItem.classList.remove('menus__item--active');
+                } );
+
+                curMenuItem.classList.add('menus__item--active');
+            }
+    });
+}
+}
+
+menusOpen();
