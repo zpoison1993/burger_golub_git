@@ -45,7 +45,7 @@
                                 </ul>
                             </nav>
                             <div class="header__links">
-                                <a href="#" class="button btn-order">ЗАКАЗАТЬ</a>
+                                <a href="#order" class="button btn-order">ЗАКАЗАТЬ</a>
                                 <a href="#" class="hamburger-menu-link">
                                     <div class="hamburger-menu-link__bars"></div>
                                 </a>
@@ -155,98 +155,480 @@
                         </button>
                     </div>
                     <div class="slider-array">
-                        <div class="slide slide--1">
-                            <div class="slide-left">
-                                <div class="burger-img">
-                                    <img src="./img/burger1.png" class="burger-pic" alt="Черный бургер">
-                                </div>
-                                <button type="button" class="composition">
+                            <!-- <button type="button" class="composition">
                                     <svg class="composition-svg">
                                         <use xlink:href="./img/icons/sprite.svg#burger"></use>
                                     </svg>
                                     <h4 class="title4 title4--composition">СОСТАВ</h4>
-                                </button>
-                                <div class="composition-content">
-                                    
-                                    <ul class="content__list">
-                                        <li class="content__item">
-                                            <svg class="content-svg">
-                                                <use xlink:href="./img/icons/sprite.svg#beef"></use>
-                                            </svg>
-                                            <div class="content-name">Говядина</div>
-                                            <div class="content-weigh">300 г</div>
-                                        </li>
-                                        <li class="content__item">
-                                            <svg class="content-svg">
-                                                <use xlink:href="./img/icons/sprite.svg#buns"></use>
-                                            </svg>
-                                            <div class="content-name">Булочки</div>
-                                            <div class="content-weigh">100 г</div>
-                                        </li>
-                                        <li class="content__item">
-                                            <svg class="content-svg">
-                                                <use xlink:href="./img/icons/sprite.svg#green"></use>
-                                            </svg>
-                                            <div class="content-name">Зелень</div>
-                                            <div class="content-weigh">70 г</div>
-                                        </li>
-                                        <li class="content__item">
-                                            <svg class="content-svg">
-                                                <use xlink:href="./img/icons/sprite.svg#sauce"></use>
-                                            </svg>
-                                            <div class="content-name">Соус</div>
-                                            <div class="content-weigh">150 г</div>
-                                        </li>
-                                        <li class="content__item">
-                                            <svg class="content-svg">
-                                                <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
-                                            </svg>
-                                            <div class="content-name">Овощи</div>
-                                            <div class="content-weigh">200 г</div>
-                                        </li>
-                                        <li class="content__item">
-                                            <svg class="content-svg">
-                                                <use xlink:href="./img/icons/sprite.svg#cheese"></use>
-                                            </svg>
-                                            <div class="content-name">Сыр</div>
-                                            <div class="content-weigh">80 г</div>
-                                        </li>
-                                    </ul>
-                                    <div class="close-wrapper">
-                                        <button type="button" class="content-close">
-                                            <svg class="close close--slider">
-                                                <use xlink:href="./img/icons/sprite.svg#close"></use>
-                                            </svg>
-                                    </button>
-                                    </div>
-                                    
-                                </div>
-                                <div class="calories">
-                                    <svg class="calories-svg">
-                                        <use xlink:href="./img/icons/sprite.svg#kkal"></use>
-                                    </svg>
-                                    <div class="calories-number">1200
-                                       <h4 class="title4 title4--calories">ККАЛ</h4> 
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="slide-right">
-                                <h2 class="title1 title1--slider">DARK BEEF BURGER</h2>
-                                <div class="slide-description">
-                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100%
-                                        говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
-                                        помидорами, луком, салатом и соусом гриль теперь с добавлением
-                                        экзотического соуса чураско.
-                                    </p>
-                                </div>
-                                <div class="price-and-order">
-                                    <div class="title1 title1--price">500<span class="roubles">РУБЛЕЙ</span></div>
-                                    <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
-                                </div>
-                            </div>
+                                </button> -->
 
-                        </div>
+                        <ul class="slider-wrapper">
+                            <li class="slide slide--1">
+                                <div class="slide-left">
+                                    <div class="burger-img">
+                                        <img src="./img/burger1.png" class="burger-pic" alt="Черный бургер">
+                                    </div>
+                                    <button type="button" class="composition" id="composition1">
+                                        <svg class="composition-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                        <h4 class="title4 title4--composition">СОСТАВ</h4>
+                                    </button>
+                                    <div class="composition-content" id='content1'>
+
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                </svg>
+                                                <div class="content-name">Говядина</div>
+                                                <div class="content-weigh">300 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                </svg>
+                                                <div class="content-name">Булочки</div>
+                                                <div class="content-weigh">100 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#green"></use>
+                                                </svg>
+                                                <div class="content-name">Зелень</div>
+                                                <div class="content-weigh">70 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                </svg>
+                                                <div class="content-name">Соус</div>
+                                                <div class="content-weigh">150 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
+                                                </svg>
+                                                <div class="content-name">Овощи</div>
+                                                <div class="content-weigh">200 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                </svg>
+                                                <div class="content-name">Сыр</div>
+                                                <div class="content-weigh">80 г</div>
+                                            </li>
+                                        </ul>
+                                        <div class="close-wrapper">
+                                            <button type="button" class="content-close">
+                                                <svg class="close close--slider">
+                                                    <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="calories">
+                                        <svg class="calories-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="calories-number">1200
+                                            <h4 class="title4 title4--calories">ККАЛ</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <h2 class="title1 title1--slider">DARK BEEF BURGER</h2>
+                                    <div class="slide-description">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                                            помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                            экзотического соуса чураско.
+                                        </p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <div class="title1 title1--price">500<span class="roubles">РУБЛЕЙ</span></div>
+                                        <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="slide slide--2">
+                                <div class="slide-left">
+                                    <div class="burger-img">
+                                        <img src="./img/burger2.png" class="burger-pic" alt="Чикен бургер">
+                                    </div>
+                                    <button type="button" class="composition" id="composition2">
+                                            <svg class="composition-svg">
+                                                <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                            <h4 class="title4 title4--composition">СОСТАВ</h4>
+                                    </button>
+        
+                                    <div class="composition-content" id='content2'    >
+
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                </svg>
+                                                <div class="content-name">Говядина</div>
+                                                <div class="content-weigh">300 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                </svg>
+                                                <div class="content-name">Булочки</div>
+                                                <div class="content-weigh">100 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#green"></use>
+                                                </svg>
+                                                <div class="content-name">Зелень</div>
+                                                <div class="content-weigh">70 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                </svg>
+                                                <div class="content-name">Соус</div>
+                                                <div class="content-weigh">150 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
+                                                </svg>
+                                                <div class="content-name">Овощи</div>
+                                                <div class="content-weigh">200 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                </svg>
+                                                <div class="content-name">Сыр</div>
+                                                <div class="content-weigh">80 г</div>
+                                            </li>
+                                        </ul>
+                                        <div class="close-wrapper">
+                                            <button type="button" class="content-close">
+                                                <svg class="close close--slider">
+                                                    <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="calories">
+                                        <svg class="calories-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="calories-number">700
+                                            <h4 class="title4 title4--calories">ККАЛ</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <h2 class="title1 title1--slider">CHICKEN BURGER</h2>
+                                    <div class="slide-description">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100%
+                                            курицы, тремя кусочками нежнейшего сыра эмменталь, двумя
+                                            помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                            экзотического соуса чураско.
+                                        </p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <div class="title1 title1--price">400<span class="roubles">РУБЛЕЙ</span></div>
+                                        <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="slide slide--3">
+                                <div class="slide-left">
+                                    <div class="burger-img">
+                                        <img src="./img/burger3.png" class="burger-pic" alt="Нью-Йоркский чизбургер с беконом">
+                                    </div>
+                                    <button type="button" class="composition" id="composition3">
+                                        <svg class="composition-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                        <h4 class="title4 title4--composition">СОСТАВ</h4>
+                                    </button>
+                                    <div class="composition-content" id='content3'>
+
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                </svg>
+                                                <div class="content-name">Говядина</div>
+                                                <div class="content-weigh">300 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                </svg>
+                                                <div class="content-name">Булочки</div>
+                                                <div class="content-weigh">100 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#green"></use>
+                                                </svg>
+                                                <div class="content-name">Зелень</div>
+                                                <div class="content-weigh">70 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                </svg>
+                                                <div class="content-name">Соус</div>
+                                                <div class="content-weigh">150 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
+                                                </svg>
+                                                <div class="content-name">Овощи</div>
+                                                <div class="content-weigh">200 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                </svg>
+                                                <div class="content-name">Сыр</div>
+                                                <div class="content-weigh">80 г</div>
+                                            </li>
+                                        </ul>
+                                        <div class="close-wrapper">
+                                            <button type="button" class="content-close">
+                                                <svg class="close close--slider">
+                                                    <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="calories">
+                                        <svg class="calories-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="calories-number">1300
+                                            <h4 class="title4 title4--calories">ККАЛ</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <h2 class="title1 title1--slider title1--slider3">NYC BACON CHEESE
+                                        BURGER</h2>
+                                    <div class="slide-description">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                                            помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                            экзотического соуса чураско.
+                                        </p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <div class="title1 title1--price">700<span class="roubles">РУБЛЕЙ</span></div>
+                                        <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="slide slide--4">
+                                <div class="slide-left">
+                                    <div class="burger-img">
+                                        <img src="./img/burger4.png" class="burger-pic" alt="Сэндвич бургер">
+                                    </div>
+                                    <button type="button" class="composition" id="composition4">
+                                        <svg class="composition-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                        <h4 class="title4 title4--composition">СОСТАВ</h4>
+                                    </button>
+                                    <div class="composition-content" id='content4'>
+
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                </svg>
+                                                <div class="content-name">Говядина</div>
+                                                <div class="content-weigh">300 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                </svg>
+                                                <div class="content-name">Булочки</div>
+                                                <div class="content-weigh">100 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#green"></use>
+                                                </svg>
+                                                <div class="content-name">Зелень</div>
+                                                <div class="content-weigh">70 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                </svg>
+                                                <div class="content-name">Соус</div>
+                                                <div class="content-weigh">150 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
+                                                </svg>
+                                                <div class="content-name">Овощи</div>
+                                                <div class="content-weigh">200 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                </svg>
+                                                <div class="content-name">Сыр</div>
+                                                <div class="content-weigh">80 г</div>
+                                            </li>
+                                        </ul>
+                                        <div class="close-wrapper">
+                                            <button type="button" class="content-close">
+                                                <svg class="close close--slider">
+                                                    <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="calories">
+                                        <svg class="calories-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="calories-number">1200
+                                            <h4 class="title4 title4--calories">ККАЛ</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <h2 class="title1 title1--slider">BURGER SANDWICH</h2>
+                                    <div class="slide-description">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                                            помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                            экзотического соуса чураско.
+                                        </p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <div class="title1 title1--price">400<span class="roubles">РУБЛЕЙ</span></div>
+                                        <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="slide slide--5">
+                                <div class="slide-left">
+                                    <div class="burger-img">
+                                        <img src="./img/burger5.png" class="burger-pic" alt="Острый креветка-бургер">
+                                    </div>
+                                    <button type="button" class="composition" id="composition5">
+                                        <svg class="composition-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                        <h4 class="title4 title4--composition">СОСТАВ</h4>
+                                    </button>
+                                    <div class="composition-content" id='content5'>
+
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                </svg>
+                                                <div class="content-name">Говядина</div>
+                                                <div class="content-weigh">300 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                </svg>
+                                                <div class="content-name">Булочки</div>
+                                                <div class="content-weigh">100 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#green"></use>
+                                                </svg>
+                                                <div class="content-name">Зелень</div>
+                                                <div class="content-weigh">70 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                </svg>
+                                                <div class="content-name">Соус</div>
+                                                <div class="content-weigh">150 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#vegetables"></use>
+                                                </svg>
+                                                <div class="content-name">Овощи</div>
+                                                <div class="content-weigh">200 г</div>
+                                            </li>
+                                            <li class="content__item">
+                                                <svg class="content-svg">
+                                                    <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                </svg>
+                                                <div class="content-name">Сыр</div>
+                                                <div class="content-weigh">80 г</div>
+                                            </li>
+                                        </ul>
+                                        <div class="close-wrapper">
+                                            <button type="button" class="content-close">
+                                                <svg class="close close--slider">
+                                                    <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="calories">
+                                        <svg class="calories-svg">
+                                            <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="calories-number">800
+                                            <h4 class="title4 title4--calories">ККАЛ</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slide-right">
+                                    <h2 class="title1 title1--slider">SHRIMP BURGER</h2>
+                                    <div class="slide-description">
+                                        <p>Ваш старый добрый знакомый, с добавлением свежевыловленных креветок,
+                                            тремя кусочками нежнейшего сыра эмменталь, двумя
+                                            помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                            экзотического соуса чурыаско.
+                                        </p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <div class="title1 title1--price">500<span class="roubles">РУБЛЕЙ</span></div>
+                                        <a href="#order" class="button btn-order btn-order-slide">ЗАКАЗАТЬ</a>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
                     </div>
                     <div class="navigation">
                         <button type="button" class="next-button">
@@ -434,7 +816,7 @@
                             </div>
                             <!-- <button class="button more">ПОДРОБНЕЕ</button> -->
                             <button type="button" class="button more">ПОДРОБНЕЕ</button>
-                        </div>
+                            
                     </li>
                     <li class="reviews__item" style="background-image: url('./img/photo-2.png')">
                         <div class="reviews__hover">
@@ -538,17 +920,18 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__block-title">Имя</div>
-                                    <input type="text" class="form__block-input">
+                                    <input type="text" name="name" class="form__block-input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">Телефон</div>
-                                    <input type="text" class="form__block-input">
+                                    <input type="text" name="phone" class="form__block-input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__block-title">Улица</div>
-                                    <input type="text" class="form__block-input form__block-input--street">
+                                    <input type="text" name="street"
+                                        class="form__block-input form__block-input--street">
                                 </label>
 
                             </div>
@@ -556,19 +939,19 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__block-title">Дом</div>
-                                    <input type="text" class="form__block-input form__block-input--house">
+                                    <input type="text" name="house" class="form__block-input form__block-input--house">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">Корпус</div>
-                                    <input type="text" class="form__block-input form__block-input--house">
+                                    <input type="text" name="block" class="form__block-input form__block-input--house">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">Квартира</div>
-                                    <input type="text" class="form__block-input form__block-input--house">
+                                    <input type="text" name="flat" class="form__block-input form__block-input--house">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">Этаж</div>
-                                    <input type="text" class="form__block-input form__block-input--house">
+                                    <input type="text" name="floor" class="form__block-input form__block-input--house">
                                 </label>
 
                             </div>
@@ -577,7 +960,8 @@
                             <div class="form__row">
                                 <label class="form__block form__block--comment">
                                     <div class="form__block-title">Комментарий</div>
-                                    <textarea type="text" class="form__block-input" cols="40" rows="4.5"></textarea>
+                                    <textarea type="text" name="comment" class="form__block-input" cols="40"
+                                        rows="4.5"></textarea>
                                 </label>
                             </div>
                             <div class="form__row form__row--radio">
@@ -614,7 +998,7 @@
 
                             </div>
                             <div class="form__row form__row--btn">
-                                <button type="submit" class="button btn-order">ЗАКАЗАТЬ</button>
+                                <button type="submit" class="button btn-order" id="send">ЗАКАЗАТЬ</button>
                                 <button type="reset" class="button btn-clear">Очистить</button>
                             </div>
 
@@ -687,6 +1071,36 @@
                 </footer>
             </section>
 
+
+            <div class="reviews-popup" id="reviews-popup">
+                    <div class="reviews-popup__container">
+                            <div class="reviews-popup__title">
+                                <h2>
+                                    Константин Спилберг
+                                </h2>
+                            <div class="reviews-popup__close">
+                                <button type="button" class="content-close">
+                                    <svg class="close close--slider">
+                                        <use xlink:href="./img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            </div>
+                            <div class="reviews__text">
+                                        <p>
+                                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... 
+                                            Никогда не думал, что булочки могут быть 
+                                            такими мягкими, котлетка такой сочной, а сыр таким 
+                                            расплавленным. Мысли все о них и о них, о них и о них. Нельзя 
+                                            устоять, невозможно забыть... Никогда не думал, что булочки 
+                                            могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                            расплавленным.
+                                        </p>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
             <div class="mobile-menu">
                 <div class="container container--mobile">
 

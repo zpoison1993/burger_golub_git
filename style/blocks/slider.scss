@@ -16,6 +16,9 @@
 .slider-array {
     overflow: hidden;
     height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
     position: relative;
 
     @include phones() {
@@ -26,10 +29,24 @@
     // align-items: center;
   
 }
+
+.slider-wrapper {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    // right:10%;
+    transition: right 1s;
+    position: relative;
+}
 .slide {
+    width:100%;
+    margin:0;
     display: flex;
+    flex: 1 0 auto;
+    // flex:1;
     align-items: center;
     height: 100%;
+    position: relative;
 
     @include tablets() {
         flex-direction: column;
@@ -116,7 +133,7 @@ width: 86%;
     // width:85%;
     max-width: 31.5625rem;
     max-height: 20.5625rem;
-    margin-left: -0.4375rem;
+    margin-left: 0;
     margin-top: 11%;
 //   padding-right: 5%;
 
@@ -139,6 +156,7 @@ width: 86%;
     @include icons_slide;
     top:14%;
     left:0%;
+    z-index: 1000;
 
     @include tablets() {
         top: 12%;
@@ -156,6 +174,7 @@ width: 86%;
         display: block;
         width: 60%;
         height: 60%;
+        z-index: 100;
     }
 }
 
