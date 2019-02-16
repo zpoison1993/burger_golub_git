@@ -268,9 +268,8 @@ menusOpen();
 
      
     }
-   
-    closePopup.addEventListener('click',function(event) {
-        popup.style.left = 9999 + 'px';
+   closePopup.addEventListener('click',function(event) {
+        popup.classList.remove('opened');
     })
 
 
