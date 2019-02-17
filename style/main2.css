@@ -2010,6 +2010,10 @@ svg.close--slider {
 .form__block--checkbox .form__block-title {
   padding-left: 2%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/order\.scss}line{font-family:\00003238}}
+.error {
+  color: #f9b43b; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000033}}
 .mobile-menu {
   background: rgba(47, 50, 52, 0.99);

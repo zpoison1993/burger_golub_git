@@ -256,7 +256,7 @@ menusOpen();
 //Модальные окна в отзывах
     const buttonsMore = document.querySelectorAll('.more');
     const popup = document.querySelector('.reviews-popup');
-    const closePopup = document.querySelector('.content-close');
+    const closePopup = document.querySelectorAll('.content-close');
     console.log(closePopup);
     
     for( var buttonMore of buttonsMore) {
@@ -268,6 +268,12 @@ menusOpen();
 
      
     }
+
+    for(let buttonClose of closePopup) {
+        buttonClose.addEventListener('click', function(event){
+            popup.classList.remove('opened');
+        });
+    }
    closePopup.addEventListener('click',function(event) {
         popup.classList.remove('opened');
     })
@@ -278,24 +284,72 @@ menusOpen();
 
 const myForm = document.querySelector('.form');
 const send = document.querySelector('#send');
+const clear = myForm.querySelector('#clear');
 
-send.addEventListener('click',function(event) {
+send.addEventListener('click', e=>{
     event.preventDefault();
-
-    const FormData = {
-        name: myForm.elements.name.value,
-        phone: myForm.elements.phone.value,
-        comment: myForm.elements.comment.value
+    if (validateForm(myForm)) {
+        const name = myForm.elements.name.value;
+        const phone = myForm.elements.phone.value;
+        const comment = myForm.elements.comment.value;
+        const to = 'test@gmail.com';
+        var formData = new FormData();
+            formData.append('name',name);
+            formData.append('phone', phone);
+            formData.append('comment', comment);
+            formData.append('to', to);
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.responseType = 'json';
+            xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+            xhr.send(formData);
+            xhr.addEventListener('load', e =>{
+                if (xhr.response.status){
+                    const response = 'сообщение отправлено';
+                    console.log(response);
+                        // modal.setContent('',response);
+                        // modal.open();
+                        // setTimeout(e=>{
+                        //     clearBtn.click();
+                        //     modal.close();
+                        // },2000);
+                        
+                } else {
+                    const rejected = 'сообщение отклонено';
+                    console.log(rejected);
+                    // modal.setContent('',rejected);
+                    // modal.open();
+                    // clearBtn.click();
+                }
+                
+            })
     }
-   
-
-    const xhr = new XMLHttpRequest();
-    xhr.responseType='json';
-    xhr.open('POST','https://webdev-api.loftschool.com/sendmail');
-    xhr.send(JSON.stringify(FormData));
-
-    xhr.addEventListener('load', () => {
-        console.log(xhr.response);
-    });
-
 })
+
+function validateForm(myForm) {
+    let valid = true;
+    
+    if (!validateField(myForm.elements.name)) {
+        valid = false;
+    }
+
+    if (!validateField(myForm.elements.phone)) {
+        valid = false;
+    }
+
+    if (!validateField(myForm.elements.comment)) {
+        valid = false;
+    }
+    return valid;
+}
+
+function validateField(field) {
+    if (!field.checkValidity()){
+        field.nextElementSibling.textContent = field.validationMessage;
+        return false;
+    }
+    else {
+        field.nextElementSibling.textContent = '';
+        return true;
+    }
+}
