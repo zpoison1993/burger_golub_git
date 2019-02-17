@@ -273,10 +273,10 @@ menusOpen();
         buttonClose.addEventListener('click', function(event){
             popup.classList.remove('opened');
         });
+    
     }
-   closePopup.addEventListener('click',function(event) {
-        popup.classList.remove('opened');
-    })
+   
+    
 
 
 //
