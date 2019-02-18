@@ -286,8 +286,8 @@ const myForm = document.querySelector('.form');
 const send = document.querySelector('#send');
 const clear = myForm.querySelector('#clear');
 
-send.addEventListener('click', e=>{
-    event.preventDefault();
+myForm.addEventListener('submit', e=>{
+    e.preventDefault();
     if (validateForm(myForm)) {
         const name = myForm.elements.name.value;
         const phone = myForm.elements.phone.value;
@@ -304,7 +304,7 @@ send.addEventListener('click', e=>{
             xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
             xhr.send(formData);
             xhr.addEventListener('load', e =>{
-                if (xhr.response.status){
+                if (xhr.status==200){
                     const response = 'сообщение отправлено';
                     console.log(response);
                         // modal.setContent('',response);
