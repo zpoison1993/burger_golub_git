@@ -1620,20 +1620,30 @@ svg.close--slider {
       padding: 17% 14%; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000357}}
-.reviews-popup {
+.modal-popup {
   position: fixed;
   height: 100%;
   width: 100%;
-  left: -9999px;
+  left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.87);
   z-index: 50000;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; }
+  opacity: 1; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000373}}
+.popup {
+  width: 50%;
+  background-color: white;
+  border-radius: 5px; }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000373}}
+    .popup {
+      width: 65%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000391}}
 .opened {
   left: 0;
   width: 100%;
@@ -1641,19 +1651,17 @@ svg.close--slider {
   opacity: 1;
   transition: opacity 1s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000381}}
-.reviews-popup__container {
-  width: 50%;
-  border-radius: 5px;
-  background-color: white;
-  padding: 4%;
-  margin: 12% 0 12%;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000399}}
+.popup__container {
+  width: 100%;
+  padding: 8%;
+  margin: 0;
   border-width: 0;
   vertical-align: middle;
   text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\0000395}}
-.reviews-popup__title {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003113}}
+.popup__upper {
   font-family: 'gagalin';
   font-size: 0.875rem;
   color: #2f3234;
@@ -1661,11 +1669,19 @@ svg.close--slider {
   display: flex;
   justify-content: space-between; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003105}}
-.reviews__text {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003123}}
+.popup__text {
   color: #2f3234; }
+  @media screen and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003123}}
+    .popup__text {
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003123}}
+    .popup__text {
+      font-size: 1rem; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003143}}
 .reviews__content {
   overflow: hidden;
   font-weight: 300;
@@ -1674,12 +1690,12 @@ svg.close--slider {
   line-height: 1.75em;
   margin-bottom: 10%; }
   @media screen and (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003143}}
     .reviews__content {
       margin-bottom: 11%;
       max-height: 55%; } }
   @media screen and (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/reviews\.scss}line{font-family:\00003143}}
     .reviews__content {
       display: none; } }
 
@@ -2014,7 +2030,11 @@ svg.close--slider {
 .error {
   color: #f9b43b; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000032}}
+.hamburger-menu-link {
+  background-color: rgba(0, 0, 0, 0); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000036}}
 .mobile-menu {
   background: rgba(47, 50, 52, 0.99);
   position: absolute;
@@ -2024,36 +2044,36 @@ svg.close--slider {
   bottom: 0;
   display: none; }
   @media screen and (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000036}}
     .mobile-menu {
       min-height: 850px; } }
   @media screen and (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\000036}}
     .mobile-menu {
       min-height: 730px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000324}}
 .container--mobile {
   width: 90%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000328}}
 .mobile-header {
   margin-top: 2%;
   margin-bottom: 15%;
   display: flex;
   justify-content: space-between; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000335}}
 .mobile-close {
   background: rgba(0, 0, 0, 0); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000339}}
 .close {
   fill: white;
   width: 20px;
   height: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000345}}
 ul.mobile-menu__list {
   display: flex;
   flex-direction: column;
@@ -2061,10 +2081,10 @@ ul.mobile-menu__list {
   font-size: 1.5rem;
   color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000353}}
 li.mobile-menu__item {
   margin-bottom: 0%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/mobile-menu\.scss}line{font-family:\0000356}}
   li.mobile-menu__item:not(:nth-child(6)):after {
     content: "";
     display: block;

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss, in `tablets'
-        from line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss
+        on line 13 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss, in `tablets'
+        from line 13 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss
 
-5:     position:absolute;
-6:     top:0;
-7:     left:0;
-8:     right:0;
-9:     bottom:0;
-10:     @include tablets() {
-11:     min-height: 850px;
-12:     }
-13:    @include phones() {
-14:     min-height: 730px;
-15:    }
+8:     position:absolute;
+9:     top:0;
+10:     left:0;
+11:     right:0;
+12:     bottom:0;
+13:     @include tablets() {
+14:     min-height: 850px;
+15:     }
+16:    @include phones() {
+17:     min-height: 730px;
+18:    }
 
 Backtrace:
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss:10:in `tablets'
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss:10
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss:13:in `tablets'
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss:13
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss, in `tablets'\A         from line 10 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss\A \A 5:     position:absolute;\A 6:     top:0;\A 7:     left:0;\A 8:     right:0;\A 9:     bottom:0;\A 10:     @include tablets() {\A 11:     min-height: 850px;\A 12:     }\A 13:    @include phones() {\A 14:     min-height: 730px;\A 15:    }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 13 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss, in `tablets'\A         from line 13 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\mobile-menu.scss\A \A 8:     position:absolute;\A 9:     top:0;\A 10:     left:0;\A 11:     right:0;\A 12:     bottom:0;\A 13:     @include tablets() {\A 14:     min-height: 850px;\A 15:     }\A 16:    @include phones() {\A 17:     min-height: 730px;\A 18:    }"; }

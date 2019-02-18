@@ -255,26 +255,91 @@ menusOpen();
 //
 //Модальные окна в отзывах
     const buttonsMore = document.querySelectorAll('.more');
-    const popup = document.querySelector('.reviews-popup');
-    const closePopup = document.querySelectorAll('.content-close');
-    console.log(closePopup);
+    const template = document.querySelector('#modal').innerHTML;
+    const modal = createModal();
+
+    for(let i=0;i<buttonsMore.length;i++){
+        const buttonMore = buttonsMore[i];
+        buttonMore.addEventListener('click', e => {
+            
+            const parentBlock = e.target.parentNode;
+            console.log(parentBlock);
+            const modalTitle = parentBlock.firstElementChild.textContent;
+            console.log(modalTitle);
+            // const modalTextContainer = modalTitle.nextElementSibling;
+            // console.log(modalTextContainer);
+            const modalText = parentBlock.firstElementChild.nextElementSibling.textContent;
+            console.log(modalText);
+
+            modal.setContent(modalTitle,modalText);
+            modal.open();
+           
+
+            // setTimeout(()=> {
+            //     modal.close();
+            // },3000);
+            // document.body.appendChild(modal);
+        });
+    };
+
+    function createModal() {
+        const container = document.createElement('div');
+        container.className = 'modal-popup';
+        container.innerHTML=template;
+        const titleBlock = container.querySelector('.popup__content-headline')
+        const contentBlock = container.querySelector('.popup__text');
+        
+      
+
+        const closeBtn = container.querySelector('.content-close');
+
+        closeBtn.addEventListener('click', e=> {
+            document.body.removeChild(container);
+        });
+
+        container.addEventListener('click', e=> {
+            if (e.target==container) {
+                closeBtn.click();
+            }
+        })
+        
+        // return container;
+
+        return {
+            open(){
+                document.body.appendChild(container);
+            },
+            close() {
+                closeBtn.click();
+            },
+            setContent(title,content) {
+                titleBlock.innerHTML = title;
+                contentBlock.innerHTML = content;
+            }
+        
+        }
+
+    }
+    // const popup = document.querySelector('.reviews-popup');
+    // const closePopup = document.querySelectorAll('.content-close');
+    // console.log(closePopup);
     
-    for( var buttonMore of buttonsMore) {
-        console.log(buttonMore);
-        buttonMore.addEventListener('click',function(event){
-        console.log(buttonMore);
-            popup.classList.add('opened');
-    })
+    // for( var buttonMore of buttonsMore) {
+    //     console.log(buttonMore);
+    //     buttonMore.addEventListener('click',function(event){
+    //     console.log(buttonMore);
+    //         popup.classList.add('opened');
+    // })
 
      
-    }
+    // }
 
-    for(let buttonClose of closePopup) {
-        buttonClose.addEventListener('click', function(event){
-            popup.classList.remove('opened');
-        });
+    // for(let buttonClose of closePopup) {
+    //     buttonClose.addEventListener('click', function(event){
+    //         popup.classList.remove('opened');
+    //     });
     
-    }
+    // }
    
     
 
@@ -302,21 +367,37 @@ myForm.addEventListener('submit', e=>{
             const xhr = new XMLHttpRequest();
             xhr.responseType = 'json';
             xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+            // xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
+            
             xhr.send(formData);
             xhr.addEventListener('load', e =>{
-                if (xhr.status==200){
-                    const response = 'сообщение отправлено';
+                if (xhr.response.status){
+                    let title = 'Результат отправки данных';   
+                    const response = 'Сообщение успешно отправлено. Дождитесь звонка оператора';
                     console.log(response);
+                    modal.setContent(title,response);
+                    modal.open();
                         // modal.setContent('',response);
                         // modal.open();
-                        // setTimeout(e=>{
-                        //     clearBtn.click();
-                        //     modal.close();
-                        // },2000);
+                    setTimeout(e=>{
+                        
+                        modal.close();
+                        clear.click();
+                    },3000);
                         
                 } else {
-                    const rejected = 'сообщение отклонено';
+                    let title = 'Результат отправки данных'; 
+                    const rejected = 'Отправить письмо не удалось, повторите запрос позже';
                     console.log(rejected);
+                    modal.setContent(title,rejected);
+                    modal.open();
+                        // modal.setContent('',response);
+                        // modal.open();
+                    setTimeout(e=>{
+                       
+                        modal.close();
+                        clear.click();
+                    },3000);
                     // modal.setContent('',rejected);
                     // modal.open();
                     // clearBtn.click();
