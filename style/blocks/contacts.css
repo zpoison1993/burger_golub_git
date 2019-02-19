@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 22 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss, in `phones'
-        from line 22 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss
+        on line 43 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss, in `phones'
+        from line 43 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss
 
-17:     bottom: 0%;
-18:     height:10%;
-19:     // @include tablets() {
-20:     //     height:7vh;
-21:     // }
-22:     @include phones() {
-23:         height:13%;
-24:     }
-25:     width: 100%;
-26:     background: center/ cover  no-repeat url("../img/footer_bg.jpg");
-27: 
+38:     bottom: 0%;
+39:     height:10%;
+40:     // @include tablets() {
+41:     //     height:7vh;
+42:     // }
+43:     @include phones() {
+44:         height:13%;
+45:     }
+46:     width: 100%;
+47:     background: center/ cover  no-repeat url("../img/footer_bg.jpg");
+48: 
 
 Backtrace:
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss:22:in `phones'
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss:22
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss:43:in `phones'
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss:43
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 22 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss, in `phones'\A         from line 22 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss\A \A 17:     bottom: 0%;\A 18:     height:10%;\A 19:     // @include tablets() {\A 20:     //     height:7vh;\A 21:     // }\A 22:     @include phones() {\A 23:         height:13%;\A 24:     }\A 25:     width: 100%;\A 26:     background: center/ cover  no-repeat url(\"../img/footer_bg.jpg\");\A 27: "; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 43 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss, in `phones'\A         from line 43 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\contacts.scss\A \A 38:     bottom: 0%;\A 39:     height:10%;\A 40:     // @include tablets() {\A 41:     //     height:7vh;\A 42:     // }\A 43:     @include phones() {\A 44:         height:13%;\A 45:     }\A 46:     width: 100%;\A 47:     background: center/ cover  no-repeat url(\"../img/footer_bg.jpg\");\A 48: "; }

@@ -434,3 +434,72 @@ function validateField(field) {
         return true;
     }
 }
+
+
+//
+//подключение Яндекс карт
+ymaps.ready(init);
+
+var placemarks = [
+    {
+        latitude: 59.94632138,
+        longitude: 30.38925246,
+        hintContent:'<div class="map__hint">Площадь пролетарской диктатуры, 62</div>',
+        balloonContent:'<div class="map__balloon"><img class="map__burger-img" src="./img/intro-burger.png" alt="Бургер"/><p>Самые вкусные бургеры у нас! Заходите по адресу: Площадь пролетарской диктатуры, 62</p></div>'
+    },
+
+    {
+        latitude: 59.97320204,
+        longitude: 30.30946247,
+        hintContent:'<div class="map__hint">Улица Чапыгина, 5</div>',
+        balloonContent:'<div class="map__balloon"><img class="map__burger-img" src="./img/intro-burger.png" alt="Бургер"/><p>Самые вкусные бургеры у нас! Заходите по адресу: улица Чапыгина, 5</p></div>'
+    },
+
+    {
+        latitude: 59.88856905,
+        longitude: 30.31646394,
+        hintContent:'<div class="map__hint">Улица Заставская, 44</div>',
+        balloonContent:'<div class="map__balloon"><img class="map__burger-img" src="./img/intro-burger.png" alt="Бургер"/><p>Самые вкусные бургеры у нас! Заходите по адресу: улица Заставская, 44</p></div>'
+    },
+
+    {
+        latitude: 59.91757453,
+        longitude: 30.49280724,
+        hintContent:'<div class="map__hint">Улица Подвойского, 42</div>',
+        balloonContent:'<div class="map__balloon"><img class="map__burger-img" src="./img/intro-burger.png" alt="Бургер"/><p>Самые вкусные бургеры у нас! Заходите по адресу: улица Подвойского, 42</p></div>'   
+    }  
+];
+
+
+let geoObjects = [];
+
+function init() {
+    var map = new ymaps.Map('map', {
+        center:[59.94128375, 30.31268579],
+        zoom: 11,
+        controls: ['zoomControl'],
+        behaviors: ['drag']
+    });
+
+    for( let i=0;i<placemarks.length;i++) {
+        let placemark = placemarks[i];
+        geoObjects[i] = new ymaps.Placemark([placemark.latitude,placemark.longitude], {
+            hintContent:placemark.hintContent,
+            balloonContent: placemark.balloonContent
+        },
+        {
+            iconLayout:'default#image',
+            iconImageHref: './img/icons/map-marker.svg',
+            iconImageSize: [46,58],
+            iconImageOffset: [-23,-57]
+
+        });
+
+    }
+    let clusterer = new ymaps.Clusterer({
+
+    });
+
+    map.geoObjects.add(clusterer);
+    clusterer.add(geoObjects);
+};
