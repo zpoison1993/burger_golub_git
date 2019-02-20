@@ -913,6 +913,40 @@
                 </ul>
             </section>
 
+        <section class="section workflow">
+            <div class="container container--workflow">
+                <h2 class="title1 title1--workflow">КАК МЫ РАБОТАЕМ</h2>
+                <div class="player">
+                    <video  class="player__video viewer"  >
+                        <source src="./video/burger_video.mp4" type="video/mp4"> <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+                        <!-- <source src="./video/burger_video.webm" type="video/webm">WebM/VP8 для Firefox4, Opera, и Chrome -->
+                        <!-- <source src="./video/burger_video.ogv" type="video/ogg">Ogg/Vorbis для старых версий браузеров Firefox и Opera     -->
+                    
+                    </video>
+                    <div class="player__controls">
+                        <button class="player__button toggle" title="Toggle Play">
+                            <svg class="play-pic">
+                                <use xlink:href="./img/icons/sprite.svg#play"></use>
+                            </svg>
+                        </button>
+                        <div class="progress">
+                            <div class="progress__filled"></div>
+                        </div>
+                        
+                        <div class="player__volume">
+                            <button class="player__button mute" title="Toggle Mute"> 
+                                <svg class="volume-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#volume"></use>
+                                </svg>
+                            </button>
+                            <input  type="range" name="volume" class="player__slider" min=0 max="100" step="5" value="100">
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+        </section>
+
             <section class="section order" id="order">
                 <div class="container container--order">
                     <h2 class="title1 title1--order">ЗАКАЖИТЕ ДОСТАВКУ</h2>

@@ -341,7 +341,95 @@ menusOpen();
     
     // }
    
+//  
+//Работа видеоплеера на HTML Audio/Video API 
+
+/*Получение элементов плеера */
+const player = document.querySelector('.player');
+const video = player.querySelector('.viewer');
+const toggle = player.querySelector('.toggle');
+const mute = player.querySelector('.mute');
+
+const progress = player.querySelector('.progress');
+const progressBar = player.querySelector('.progress__filled');
+const range = player.querySelector('.player__slider');
+
+/* Построение функций */
+function togglePlay() {
     
+    if(video.paused) {
+        video.play();
+    }else {
+        video.pause();
+    };    
+}
+function updateButton() {
+    const icon=this.paused;
+    if(icon) {
+        toggle.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#play"></use></svg>'; 
+    } else {
+        toggle.innerHTML = '<img src="./img/icons/pause.png" style="height:18px; width:18px">'; 
+        // toggle.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#pause"></use></svg>'; 
+    }
+    // console.log('Update the button');
+    // console.log(icon);
+}
+
+function muteButton() {
+    let muteIcon=this.muted;
+    console.log(muteIcon);
+    if(muteIcon) {
+        mute.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#volume"></use></svg>'; 
+    }   else {
+        mute.innerHTML = '<img src="./img/icons/mute.png" style="height:18px; width:18px">'; 
+        // toggle.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#pause"></use></svg>'; 
+    }
+    muteIcon=!muteIcon;
+    // console.log(muteIcon);
+}
+
+function handleRangeUpdate() {
+    video.volume = this.value/100;
+    // console.log(this.name);
+    // return console.log(this.value);
+}
+
+function handleProgress() {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.left = `${percent}%`;
+}
+
+function scrub(e) {
+    const scrubTime = (e.offsetX / progress.offsetWidth)* video.duration;
+    video.currentTime = scrubTime;
+    console.log(e);
+}
+
+/* Построение обработчиков событий */
+video.addEventListener('click',togglePlay );
+video.addEventListener('play',updateButton);
+video.addEventListener('pause',updateButton);
+mute.addEventListener('click',muteButton);
+
+
+video.addEventListener('timeupdate',handleProgress);
+
+
+toggle.addEventListener('click', togglePlay);
+
+range.addEventListener('change', handleRangeUpdate);
+range.addEventListener('mousemove', handleRangeUpdate);
+
+// let mousedown = false
+progress.addEventListener('click',scrub);
+// progress.addEventListener('mousemove',(e) => {
+//     if(mousedown) {
+//         scrub(e);
+//     }
+// });
+// progress.addEventListener('mousedown', ()=> mousedown = true);
+// progress.addEventListener('mouseup', ()=> mousedown = false);
+
 
 
 //
@@ -434,6 +522,9 @@ function validateField(field) {
         return true;
     }
 }
+//
+
+
 
 
 //
