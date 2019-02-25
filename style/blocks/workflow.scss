@@ -14,12 +14,21 @@
 
 .container--workflow{
     align-items: center;
+    // position: relative;
+    @include tablets() {
+        height: 62%;
+    }
 }
 
 .player {
     width:70%;
     position: relative;
     overflow: hidden;
+    @include tablets() {
+        margin-top: 7%;
+        width: 100%; 
+    }
+ 
 
 }
 .player__video {
@@ -35,6 +44,11 @@
     position: absolute;
     bottom:0;
     justify-content: space-around;
+
+    height: 3.2rem;
+    @include phones() {
+        height: 2.2rem;
+    }
     // transform: translateY(100%) translateY(-5px);
     // transition: all .3s;
 }
@@ -49,8 +63,12 @@
 
 .player__button {
     background: rgba(0,0,0,0);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    @include phones() {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
     outline: none;
 }
 .play-pic, .volume-pic {
@@ -66,6 +84,9 @@
     flex-basis: 65%;
     @include tablets() {
         flex-basis: 55%;
+    }
+    @include phones() {
+        flex-basis: 83%;
     }
     height: 5px;
     border-radius: 1px;
@@ -90,14 +111,17 @@
 
 .player__volume {
     margin-left: auto;
-   
-}
+   display: flex;
+   @include phones(){
+       display: none;
+   }
+ }
  
   
 .player__slider {
     // width:10px;
-    height:30px;
-   padding-top: 3.5%;
+    height:inherit;
+//    padding-top: 3.5%;
 }
 
 input[type=range] {

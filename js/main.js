@@ -480,16 +480,29 @@ function updateButton() {
     if (icon) {
         toggle.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#play"></use></svg>';
     } else {
-        toggle.innerHTML = '<img src="./img/icons/pause.png" style="height:18px; width:18px">';
+        toggle.innerHTML = '<img src="./img/icons/pause.png" style="height:1.5rem; width:1.5rem">';
         // toggle.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#pause"></use></svg>'; 
     }
     // console.log('Update the button');
     // console.log(icon);
 }
 
-function handleRangeUpdate() {
+function handleRangeUpdate(e) {
+    // console.log(e.currentTarget.value);
+    
     video.volume = this.value / 100;
-    const currentVolume = video.volume;
+    if(isMuted) {
+        mute.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#volume"></use></svg>';
+    } 
+    else {
+        mute.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#volume"></use></svg>';
+    }
+    
+    // isMuted = !isMuted;
+    console.log(isMuted);
+    
+    // let currentVolume = e.currentTarget.value;
+    // return currentVolume
     // return currentVolume;
     // console.log(this.value);
     // return console.log(this.value);
@@ -498,12 +511,13 @@ function handleRangeUpdate() {
 function muteButton() {
     // let muteIcon=this.muted;
     // console.log(muteIcon);
+    console.log(isMuted);
     if (!isMuted) {
         mute.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#volume"></use></svg>';
-        // video.volume = currentVolume;// handleRangeUpdate(); 
-        video.volume = 1;
+        video.volume = range.value/100; // 
+        // video.volume = 1;
     } else {
-        mute.innerHTML = '<img src="./img/icons/mute.png" style="height:18px; width:18px">';
+        mute.innerHTML = '<img src="./img/icons/mute.png" style="height:30px; width:28px">';
         video.volume = 0;
         // toggle.innerHTML = '<svg class="play-pic"><use xlink:href="./img/icons/sprite.svg#pause"></use></svg>'; 
     }
@@ -537,7 +551,7 @@ video.addEventListener('timeupdate', handleProgress);
 toggle.addEventListener('click', togglePlay);
 
 range.addEventListener('change', handleRangeUpdate);
-range.addEventListener('mousemove', handleRangeUpdate);
+// range.addEventListener('mousemove', handleRangeUpdate);
 
 // let mousedown = false
 progress.addEventListener('click', scrub);

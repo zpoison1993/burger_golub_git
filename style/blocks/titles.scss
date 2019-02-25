@@ -55,6 +55,10 @@
     &--workflow {
         color:black;
         text-align: center;
+        @include phones() {
+            font-size: 4.1rem;
+            width: 60%;
+        }
     }
 
     &--order {
