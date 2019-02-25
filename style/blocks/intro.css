@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'laptops'.
-        on line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss, in `laptops'
-        from line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss
+Error: Undefined mixin 'phones'.
+        on line 30 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss, in `phones'
+        from line 30 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss
 
-52:     position: relative;
-53:     height:1.375rem;
-54:     align-items: center;
-55:     margin-left:15%;
-56: 
-57:     @include laptops() {
-58:         display: flex;
-59:         align-items: center;
-60:     }
-61: 
-62:     @include phones() {
+25: }
+26: 
+27: .logo {
+28:     // width: 15%;
+29:     margin-top:0.5%;
+30:     @include phones() {
+31:         margin-top: 4.5%;
+32:     }
+33:     // margin-right: 5%;
+34: }
+35: 
 
 Backtrace:
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss:57:in `laptops'
-C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss:57
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss:30:in `phones'
+C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss:30
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'laptops'.\A         on line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss, in `laptops'\A         from line 57 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss\A \A 52:     position: relative;\A 53:     height:1.375rem;\A 54:     align-items: center;\A 55:     margin-left:15%;\A 56: \A 57:     @include laptops() {\A 58:         display: flex;\A 59:         align-items: center;\A 60:     }\A 61: \A 62:     @include phones() {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 30 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss, in `phones'\A         from line 30 of C:\Users\Vladimir\Documents\web\Loftschool\burger_golub_git\style\blocks\intro.scss\A \A 25: }\A 26: \A 27: .logo {\A 28:     // width: 15%;\A 29:     margin-top:0.5%;\A 30:     @include phones() {\A 31:         margin-top: 4.5%;\A 32:     }\A 33:     // margin-right: 5%;\A 34: }\A 35: "; }

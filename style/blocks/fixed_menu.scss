@@ -5,6 +5,7 @@
   top: rem(90px);
   right: rem(63px);
   z-index: 10;
+  // transition: transform 1s;
   @include tablets() {
     display: none;
 }
