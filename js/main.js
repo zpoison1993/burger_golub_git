@@ -93,11 +93,11 @@ $('[data-scroll-to').on('click', e => {
 })
 
 
-// $('.wrapper').on('touchmove', e => {
-//     e.preventDefault();
-// })
+$('.wrapper').on('touchmove', e => {
+    e.preventDefault();
+})
 
-// if (isMobile) {
+if (isMobile) {
     $(window).swipe({
         swipe: function (event, direction) {
             const nextOrPrev = direction === 'up' ? 'next' : 'prev';
@@ -105,7 +105,7 @@ $('[data-scroll-to').on('click', e => {
             scrollToSection(nextOrPrev);
         }
     })
-// }
+}
 
 
 //
