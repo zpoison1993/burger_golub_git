@@ -97,7 +97,7 @@ $('[data-scroll-to').on('click', e => {
 //     e.preventDefault();
 // })
 
-if (isMobile) {
+// if (isMobile) {
     $(window).swipe({
         swipe: function (event, direction) {
             const nextOrPrev = direction === 'up' ? 'next' : 'prev';
@@ -105,7 +105,7 @@ if (isMobile) {
             scrollToSection(nextOrPrev);
         }
     })
-}
+// }
 
 
 //
