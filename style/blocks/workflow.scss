@@ -46,6 +46,10 @@
     justify-content: space-around;
 
     height: 3.2rem;
+
+    @include tablets() {
+        justify-content: left;
+    }
     @include phones() {
         height: 2.2rem;
     }
@@ -81,9 +85,9 @@
     // flex: 10;
     position: relative;
     display: flex;
-    flex-basis: 65%;
+    flex-basis: 55%;
     @include tablets() {
-        flex-basis: 55%;
+        flex-basis: 49%;
     }
     @include phones() {
         flex-basis: 83%;
