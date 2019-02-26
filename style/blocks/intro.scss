@@ -139,7 +139,9 @@ li.menu-list__item {
           }
 
     }
-
+.menu-list__item-link {
+    cursor: pointer;
+}
 .intro__content {
     flex:0.8;
     display: flex;
