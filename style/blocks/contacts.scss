@@ -104,9 +104,9 @@
     }
     .phone-pic {
         width:6%;
-        height: 40%;
+        // height: 40%;
         @include phones() {
-            height: 100%;
+            // height: 100%;
         }
      }
 

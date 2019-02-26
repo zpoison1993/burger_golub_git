@@ -46,10 +46,10 @@ const scrollToSection = direction => {
     console.log(nextSection.length);
     const prevSection = activeSection.prev();
     // console.log(prevSection.length); && activeSection.length
-    if (direction === 'next' && activeSection.index() < 8) {
+    if (direction === 'down' && activeSection.index() < 8) {
         performTransition(nextSection.index());
     }
-    if (direction === 'prev' && prevSection.length) {
+    if (direction === 'up' && prevSection.length) {
         performTransition(prevSection.index());
     }
 }
@@ -59,11 +59,11 @@ $('.wrapper').on('wheel', e => {
     console.log('wheel');
     if (deltaY > 0) {
         //next section
-        scrollToSection('next');
+        scrollToSection('down');
     }
     if (deltaY < 0) {
         //previous section
-        scrollToSection('prev');
+        scrollToSection('up');
     }
     console.log(deltaY);
 });
@@ -73,12 +73,12 @@ $(document).on('keydown', e => {
     switch (e.keyCode) {
         case 38:
 
-            scrollToSection('prev');
+            scrollToSection('up');
 
             break;
         case 40:
 
-            scrollToSection('next');
+            scrollToSection('down');
 
             break;
     }
@@ -98,9 +98,9 @@ $('.wrapper').on('touchmove', e => {
 })
 
 if (isMobile) {
-    $(document).swipe({
+    $(window).swipe({
         swipe: function (event, direction) {
-            const nextOrPrev = direction === 'up' ? 'next' : 'prev';
+            const nextOrPrev = direction === 'up' ? 'down' : 'up';
             // alert(nextOrPrev);
             scrollToSection(nextOrPrev);
         }
