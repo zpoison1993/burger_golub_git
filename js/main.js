@@ -93,9 +93,9 @@ $('[data-scroll-to').on('click', e => {
 })
 
 
-$('.wrapper').on('touchmove', e => {
-    e.preventDefault();
-})
+// $('.wrapper').on('touchmove', e => {
+//     e.preventDefault();
+// })
 
 if (isMobile) {
     $(display).swipe({
