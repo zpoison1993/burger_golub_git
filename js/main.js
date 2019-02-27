@@ -98,7 +98,7 @@ $('.wrapper').on('touchmove', e => {
 })
 
 if (isMobile) {
-    $(window).swipe({
+    $(display).swipe({
         swipe: function (event, direction) {
             const nextOrPrev = direction === 'up' ? 'down' : 'up';
             // alert(nextOrPrev);

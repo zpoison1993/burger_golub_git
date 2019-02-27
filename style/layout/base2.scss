@@ -78,7 +78,7 @@
     min-height: 650px;
 
     @include tablets() {
-      min-height: 750px;
+      min-height: 768px;
     }
     @include phones() {
       min-height: 640px;

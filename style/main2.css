@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (max-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000375}}
     .section {
-      min-height: 750px; } }
+      min-height: 768px; } }
   @media screen and (max-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/layout\/base2\.scss}line{font-family:\0000375}}
     .section {
@@ -806,7 +806,7 @@ li.menu-list__item {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003157}}
     .intro__pic {
       padding: 0;
-      width: 65.5%; } }
+      width: 55.5%; } }
   @media screen and (max-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/intro\.scss}line{font-family:\00003157}}
     .intro__pic {
