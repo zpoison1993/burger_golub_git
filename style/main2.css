@@ -975,12 +975,12 @@ li.menu-list__item {
   padding: 0 1%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/slider2\.scss}line{font-family:\0000321}}
   .navigation--prev {
-    left: 0;
-    top: 50%; }
+    left: -5%;
+    top: 44%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/slider2\.scss}line{font-family:\0000325}}
   .navigation--next {
-    right: 0;
-    top: 50%; }
+    right: -5%;
+    top: 44%; }
   @media screen and (max-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Vladimir\/Documents\/web\/Loftschool\/burger_golub_git\/style\/blocks\/slider2\.scss}line{font-family:\0000317}}
     .navigation {
